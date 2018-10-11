@@ -6,19 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="//litten.me">
-  <title>Archives | Litten的博客</title>
+  <title>api doc | Litten的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="华中科技大学09级，就职于腾讯SNG。擅长各项前端技能，深入研究移动端开发与前端性能。非专业视觉设计师。此为博客一枚。">
-<meta name="keywords" content="前端,js,jquery,javascript,html5,开发者,程序猿,程序媛,极客,编程,代码,开源,IT网站,Developer,Programmer,Coder,Geek,html,css,css3,用户体验">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Litten的博客">
-<meta property="og:url" content="//litten.me/archives/index.html">
+  <meta name="description" content="舒适100APP之“首页”接口文档版权所有，保留所有权利。 API接口1.1 接口协议说明采用基于 HTTP 标准的 RESTFul 风格接口，即：每个接口功能都是一个特定的 URI；使用 HTTP GET/POST/PUT/DELETE 来进行获取、创建、修改和删除操作。 1.1.1 返回数据资源返回内容无特殊说明，均采用 JSON 格式，编码为 UTF-8。即 HTTP 请求头为：Accept">
+<meta name="keywords" content="666,api">
+<meta property="og:type" content="article">
+<meta property="og:title" content="api doc">
+<meta property="og:url" content="//litten.me/2018/10/11/api-doc/index.html">
 <meta property="og:site_name" content="Litten的博客">
-<meta property="og:description" content="华中科技大学09级，就职于腾讯SNG。擅长各项前端技能，深入研究移动端开发与前端性能。非专业视觉设计师。此为博客一枚。">
+<meta property="og:description" content="舒适100APP之“首页”接口文档版权所有，保留所有权利。 API接口1.1 接口协议说明采用基于 HTTP 标准的 RESTFul 风格接口，即：每个接口功能都是一个特定的 URI；使用 HTTP GET/POST/PUT/DELETE 来进行获取、创建、修改和删除操作。 1.1.1 返回数据资源返回内容无特殊说明，均采用 JSON 格式，编码为 UTF-8。即 HTTP 请求头为：Accept">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-10-11T09:58:55.192Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Litten的博客">
-<meta name="twitter:description" content="华中科技大学09级，就职于腾讯SNG。擅长各项前端技能，深入研究移动端开发与前端性能。非专业视觉设计师。此为博客一枚。">
+<meta name="twitter:title" content="api doc">
+<meta name="twitter:description" content="舒适100APP之“首页”接口文档版权所有，保留所有权利。 API接口1.1 接口协议说明采用基于 HTTP 标准的 RESTFul 风格接口，即：每个接口功能都是一个特定的 URI；使用 HTTP GET/POST/PUT/DELETE 来进行获取、创建、修改和删除操作。 1.1.1 返回数据资源返回内容无特殊说明，均采用 JSON 格式，编码为 UTF-8。即 HTTP 请求头为：Accept">
   
     <link rel="alternative" href="/atom.xml" title="Litten的博客" type="application/atom+xml">
   
@@ -158,36 +159,5295 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-api-doc" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/10/11/api-doc/" class="archive-article-date">
-  	<time datetime="2018-10-11T09:56:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-10-11</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/10/11/api-doc/">api doc</a>
+    <h1 class="article-title" itemprop="name">
+      api doc
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2018/10/11/api-doc/" class="archive-article-date">
+  	<time datetime="2018-10-11T09:56:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-10-11</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="舒适100APP之“首页”接口文档"><a href="#舒适100APP之“首页”接口文档" class="headerlink" title="舒适100APP之“首页”接口文档"></a>舒适100APP之“首页”接口文档</h1><p>版权所有，保留所有权利。</p>
+<h1 id="API接口"><a href="#API接口" class="headerlink" title="API接口"></a>API接口</h1><h2 id="1-1-接口协议说明"><a href="#1-1-接口协议说明" class="headerlink" title="1.1 接口协议说明"></a>1.1 接口协议说明</h2><p>采用基于 HTTP 标准的 RESTFul 风格接口，即：每个接口功能都是一个特定的 URI；<br>使用 HTTP GET/POST/PUT/DELETE 来进行获取、创建、修改和删除操作。</p>
+<h3 id="1-1-1-返回数据"><a href="#1-1-1-返回数据" class="headerlink" title="1.1.1 返回数据"></a>1.1.1 返回数据</h3><p>资源返回内容无特殊说明，均采用 JSON 格式，编码为 <code>UTF-8</code>。<br>即 HTTP 请求头为：<code>Accept: */*</code><br>HTTP 返回头为：<code>Content-Type: application/json; charset=UTF-8</code></p>
+<p>调用接口成功，返回 HTTP 状态码 <code>200</code>，并返回指定内容（见下面具体说明）。</p>
+<p>调用接口失败，返回 HTTP 状态码 <code>400</code>，表示参数错误，并返回 json 内容，</p>
+<p>如 <code>{&quot;status&quot;:400,&quot;message&quot;:&quot;invalid param&quot;}</code>，<code>message</code> 为具体错误信息。</p>
+<p>调用接口认证失败，返回 HTTP 状态码 <code>401</code>。</p>
+<p>如果服务器本身发生错误，会返回 HTTP 状态码 <code>500</code>，此时返回内容未定义。</p>
+<h3 id="1-1-2-认证"><a href="#1-1-2-认证" class="headerlink" title="1.1.2 认证"></a>1.1.2 认证</h3><p>访问所有接口都需要提供认证信息。</p>
+<p>需要在管理后台-配置管理-接口授权码管理，配置对应的类型、token以及允许访问的ip，多个ip用回车键换行</p>
+<p>认证信息在 HTTP 请求头中提供：</p>
+<p>Authorization: Bearer token</p>
+<p>例如：</p>
+<p>Authorization: Bearer aZCILfPnSgnO5rYeDiu3zsU7ZuugpB3U</p>
+<h1 id="1-0-账号密码登录"><a href="#1-0-账号密码登录" class="headerlink" title="1.0 账号密码登录"></a>1.0 账号密码登录</h1><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HTTP 方法</td>
+<td>　</td>
+<td>POST</td>
+</tr>
+<tr>
+<td>本地HTTP 地址</td>
+<td>　</td>
+<td><a href="http://api.test2.shushi100.com:8100/app/site/login" target="_blank" rel="noopener">http://api.test2.shushi100.com:8100/app/site/login</a></td>
+</tr>
+<tr>
+<td>正式服务器</td>
+<td>　</td>
+<td><a href="https://api.shushi100.com/app/site/login" target="_blank" rel="noopener">https://api.shushi100.com/app/site/login</a></td>
+</tr>
+<tr>
+<td>POST 参数</td>
+<td>username</td>
+<td>手机号码, 必填</td>
+</tr>
+<tr>
+<td></td>
+<td>password</td>
+<td>密码, 必填</td>
+</tr>
+<tr>
+<td>返回状态</td>
+<td>200</td>
+<td>调用成功，并返回 JSON 数据</td>
+</tr>
+<tr>
+<td>返回数据 json(ok=1)</td>
+<td>ok</td>
+<td>登录成功ok=1</td>
+</tr>
+<tr>
+<td></td>
+<td>data</td>
+<td>返回数据</td>
+</tr>
+<tr>
+<td></td>
+<td>data.token</td>
+<td>token</td>
+</tr>
+<tr>
+<td></td>
+<td>data.user_id</td>
+<td>用户id</td>
+</tr>
+<tr>
+<td>返回数据 json(ok=0)</td>
+<td>ok</td>
+<td>登录失败ok=0</td>
+</tr>
+<tr>
+<td></td>
+<td>error</td>
+<td>错误信息</td>
+</tr>
+</tbody>
+</table>
+<h1 id="1-1-手机号和验证码登录"><a href="#1-1-手机号和验证码登录" class="headerlink" title="1.1 手机号和验证码登录"></a>1.1 手机号和验证码登录</h1><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HTTP 方法</td>
+<td>　</td>
+<td>POST</td>
+</tr>
+<tr>
+<td>本地HTTP 地址</td>
+<td>　</td>
+<td><a href="http://api.test2.shushi100.com:8100/app/site/login-by-code" target="_blank" rel="noopener">http://api.test2.shushi100.com:8100/app/site/login-by-code</a></td>
+</tr>
+<tr>
+<td>正式服务器</td>
+<td>　</td>
+<td><a href="https://api.shushi100.com/app/site/login-by-code" target="_blank" rel="noopener">https://api.shushi100.com/app/site/login-by-code</a></td>
+</tr>
+<tr>
+<td>POST 参数</td>
+<td>username</td>
+<td>手机号码, 必填</td>
+</tr>
+<tr>
+<td></td>
+<td>code</td>
+<td>验证码, 必填</td>
+</tr>
+<tr>
+<td>返回状态</td>
+<td>200</td>
+<td>调用成功，并返回 JSON 数据</td>
+</tr>
+<tr>
+<td>返回数据 json(ok=1)</td>
+<td>ok</td>
+<td>登录成功ok=1</td>
+</tr>
+<tr>
+<td></td>
+<td>data</td>
+<td>返回数据</td>
+</tr>
+<tr>
+<td></td>
+<td>data.token</td>
+<td>token</td>
+</tr>
+<tr>
+<td></td>
+<td>data.user_id</td>
+<td>用户id</td>
+</tr>
+<tr>
+<td></td>
+<td>data.isSend</td>
+<td>是否发送了注册优惠券，true代表发送了注册优惠券，false代表没有发</td>
+</tr>
+<tr>
+<td></td>
+<td>data.couponCutTotal</td>
+<td>注册发了一共多少钱的优惠券，弹框时候</td>
+</tr>
+<tr>
+<td>返回数据 json(ok=0)</td>
+<td>ok</td>
+<td>登录失败ok=0</td>
+</tr>
+<tr>
+<td></td>
+<td>error</td>
+<td>错误信息</td>
+</tr>
+</tbody>
+</table>
+<h1 id="1-2-注册"><a href="#1-2-注册" class="headerlink" title="1.2 注册"></a>1.2 注册</h1><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HTTP 方法</td>
+<td>　</td>
+<td>POST</td>
+</tr>
+<tr>
+<td>本地HTTP 地址</td>
+<td>　</td>
+<td><a href="http://api.test2.shushi100.com:8100/app/site/signup" target="_blank" rel="noopener">http://api.test2.shushi100.com:8100/app/site/signup</a></td>
+</tr>
+<tr>
+<td>正式服务器</td>
+<td>　</td>
+<td><a href="https://api.shushi100.com/app/site/signup" target="_blank" rel="noopener">https://api.shushi100.com/app/site/signup</a></td>
+</tr>
+<tr>
+<td>POST 参数</td>
+<td>username</td>
+<td>手机号码, 必填</td>
+</tr>
+<tr>
+<td></td>
+<td>code</td>
+<td>验证码, 必填</td>
+</tr>
+<tr>
+<td></td>
+<td>password</td>
+<td>密码, 必填</td>
+</tr>
+<tr>
+<td></td>
+<td>checkbox</td>
+<td>注册协议，选填，同意注册协议就填写”on”，否则传其他值或者不传</td>
+</tr>
+<tr>
+<td>返回状态</td>
+<td>200</td>
+<td>调用成功，并返回 JSON 数据</td>
+</tr>
+<tr>
+<td>返回数据 json(ok=1)</td>
+<td>ok</td>
+<td>注册成功并返回了token</td>
+</tr>
+<tr>
+<td></td>
+<td>data</td>
+<td>返回数据</td>
+</tr>
+<tr>
+<td></td>
+<td>data.token</td>
+<td>token</td>
+</tr>
+<tr>
+<td></td>
+<td>data.user_id</td>
+<td>用户id</td>
+</tr>
+<tr>
+<td></td>
+<td>data.isSend</td>
+<td>是否发送了注册优惠券，true代表发送了注册优惠券，false代表没有发</td>
+</tr>
+<tr>
+<td></td>
+<td>data.couponCutTotal</td>
+<td>注册发了一共多少钱的优惠券，弹框时候</td>
+</tr>
+<tr>
+<td>返回数据 json(ok=2)</td>
+<td>ok</td>
+<td>注册成功，返回token失败&amp;自动登录失败，需要将用户跳转到登录页去</td>
+</tr>
+<tr>
+<td></td>
+<td>error</td>
+<td>错误信息，这里的错误信息为：自动登录失败，请手动登录</td>
+</tr>
+<tr>
+<td>返回数据 json(ok=0)</td>
+<td>ok</td>
+<td>注册失败</td>
+</tr>
+<tr>
+<td></td>
+<td>error</td>
+<td>错误信息</td>
+</tr>
+</tbody>
+</table>
+<h1 id="1-3-找回密码"><a href="#1-3-找回密码" class="headerlink" title="1.3 找回密码"></a>1.3 找回密码</h1><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HTTP 方法</td>
+<td>　</td>
+<td>POST</td>
+</tr>
+<tr>
+<td>本地HTTP 地址</td>
+<td>　</td>
+<td><a href="http://api.test2.shushi100.com:8100/app/site/reset" target="_blank" rel="noopener">http://api.test2.shushi100.com:8100/app/site/reset</a></td>
+</tr>
+<tr>
+<td>正式服务器</td>
+<td>　</td>
+<td><a href="https://api.shushi100.com/app/site/reset" target="_blank" rel="noopener">https://api.shushi100.com/app/site/reset</a></td>
+</tr>
+<tr>
+<td>POST 参数</td>
+<td>username</td>
+<td>手机号码, 必填</td>
+</tr>
+<tr>
+<td></td>
+<td>code</td>
+<td>验证码, 必填</td>
+</tr>
+<tr>
+<td></td>
+<td>password</td>
+<td>新密码, 必填</td>
+</tr>
+<tr>
+<td>返回状态</td>
+<td>200</td>
+<td>调用成功，并返回 JSON 数据</td>
+</tr>
+<tr>
+<td>返回数据 json(ok=1)</td>
+<td>ok</td>
+<td>找回密码成功并返回了token</td>
+</tr>
+<tr>
+<td></td>
+<td>data</td>
+<td>返回数据</td>
+</tr>
+<tr>
+<td></td>
+<td>data.token</td>
+<td>token</td>
+</tr>
+<tr>
+<td>返回数据 json(ok=2)</td>
+<td>ok</td>
+<td>找回密码成功，返回token失败&amp;自动登录失败，需要将用户跳转到登录页去</td>
+</tr>
+<tr>
+<td></td>
+<td>error</td>
+<td>错误信息，这里的错误信息为：自动登录失败，请手动登录</td>
+</tr>
+<tr>
+<td>返回数据 json(ok=0)</td>
+<td>ok</td>
+<td>找回密码失败</td>
+</tr>
+<tr>
+<td></td>
+<td>error</td>
+<td>错误信息</td>
+</tr>
+</tbody>
+</table>
+<h1 id="1-4-发送验证码"><a href="#1-4-发送验证码" class="headerlink" title="1.4 发送验证码"></a>1.4 发送验证码</h1><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HTTP 方法</td>
+<td>　</td>
+<td>POST</td>
+</tr>
+<tr>
+<td>本地HTTP 地址</td>
+<td>　</td>
+<td><a href="http://api.test2.shushi100.com:8100/app/site/ajax-code" target="_blank" rel="noopener">http://api.test2.shushi100.com:8100/app/site/ajax-code</a></td>
+</tr>
+<tr>
+<td>正式服务器</td>
+<td>　</td>
+<td><a href="https://api.shushi100.com/app/site/ajax-code" target="_blank" rel="noopener">https://api.shushi100.com/app/site/ajax-code</a></td>
+</tr>
+<tr>
+<td>POST 参数</td>
+<td>mobile</td>
+<td>手机号码, 必填</td>
+</tr>
+<tr>
+<td></td>
+<td>type</td>
+<td>类型，必填，字符串，注册时填写”reg”，找回密码填写”reset”，手机登录验证码获取填写”login”</td>
+</tr>
+<tr>
+<td>返回状态</td>
+<td>200</td>
+<td>调用成功，并返回 JSON 数据</td>
+</tr>
+<tr>
+<td>返回数据 json(ok=1)</td>
+<td>ok</td>
+<td>验证码发送成功ok=1</td>
+</tr>
+<tr>
+<td></td>
+<td>data</td>
+<td>返回数据，这里返回空数组</td>
+</tr>
+<tr>
+<td>返回数据 json(ok=0)</td>
+<td>ok</td>
+<td>验证码发送失败ok=0</td>
+</tr>
+<tr>
+<td></td>
+<td>error</td>
+<td>错误信息</td>
+</tr>
+</tbody>
+</table>
+<h1 id="1-5-退出登录"><a href="#1-5-退出登录" class="headerlink" title="1.5 退出登录"></a>1.5 退出登录</h1><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HTTP 方法</td>
+<td>　</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>本地HTTP 地址</td>
+<td>　</td>
+<td><a href="http://api.test2.shushi100.com:8100/app/site/logout" target="_blank" rel="noopener">http://api.test2.shushi100.com:8100/app/site/logout</a></td>
+</tr>
+<tr>
+<td>正式服务器</td>
+<td>　</td>
+<td><a href="https://api.shushi100.com/app/site/logout" target="_blank" rel="noopener">https://api.shushi100.com/app/site/logout</a></td>
+</tr>
+<tr>
+<td>GET 参数</td>
+<td>无</td>
+<td></td>
+</tr>
+<tr>
+<td>返回状态</td>
+<td>200</td>
+<td>调用成功，并返回 JSON 数据</td>
+</tr>
+<tr>
+<td>返回数据 json(ok=1)，本接口没有ok=0返回</td>
+<td>ok</td>
+<td>退出登录成功ok=1</td>
+</tr>
+<tr>
+<td></td>
+<td>data</td>
+<td>返回数据，这里返回空数组</td>
+</tr>
+</tbody>
+</table>
+<h1 id="1-6-获取服务商城市"><a href="#1-6-获取服务商城市" class="headerlink" title="1.6 获取服务商城市"></a>1.6 获取服务商城市</h1><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HTTP 方法</td>
+<td>　</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>本地HTTP 地址</td>
+<td>　</td>
+<td><a href="http://api.test2.shushi100.com:8100/app/site/location" target="_blank" rel="noopener">http://api.test2.shushi100.com:8100/app/site/location</a></td>
+</tr>
+<tr>
+<td>正式服务器</td>
+<td>　</td>
+<td><a href="https://api.shushi100.com/app/site/location" target="_blank" rel="noopener">https://api.shushi100.com/app/site/location</a></td>
+</tr>
+<tr>
+<td>GET 参数</td>
+<td>lng</td>
+<td>经度，浮点，选填，（-180.0 &lt;= lng &lt;= 180.0）</td>
+</tr>
+<tr>
+<td></td>
+<td>lat</td>
+<td>纬度，浮点，选填，（-90.0 &lt;= lat &lt;= 90.0）</td>
+</tr>
+<tr>
+<td>返回状态</td>
+<td>200</td>
+<td>调用成功，并返回 JSON 数据</td>
+</tr>
+<tr>
+<td>返回数据 json(ok=1)，本接口没有ok=0返回</td>
+<td>ok</td>
+<td>成功ok=1</td>
+</tr>
+<tr>
+<td></td>
+<td>data</td>
+<td>返回数据</td>
+</tr>
+<tr>
+<td></td>
+<td>data.provider_id</td>
+<td>服务商id</td>
+</tr>
+<tr>
+<td></td>
+<td>data.name</td>
+<td>服务商城市名字</td>
+</tr>
+<tr>
+<td></td>
+<td>data.province_id</td>
+<td>服务商城市对应的省份id</td>
+</tr>
+<tr>
+<td></td>
+<td>data.district_id</td>
+<td>服务商城市id</td>
+</tr>
+</tbody>
+</table>
+<h1 id="1-7-切换城市"><a href="#1-7-切换城市" class="headerlink" title="1.7 切换城市"></a>1.7 切换城市</h1><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HTTP 方法</td>
+<td>　</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>本地HTTP 地址</td>
+<td>　</td>
+<td><a href="http://api.test2.shushi100.com:8100/app/site/district" target="_blank" rel="noopener">http://api.test2.shushi100.com:8100/app/site/district</a></td>
+</tr>
+<tr>
+<td>正式服务器</td>
+<td>　</td>
+<td><a href="https://api.shushi100.com/app/site/district" target="_blank" rel="noopener">https://api.shushi100.com/app/site/district</a></td>
+</tr>
+<tr>
+<td>GET 参数</td>
+<td>无</td>
+<td></td>
+</tr>
+<tr>
+<td>返回状态</td>
+<td>200</td>
+<td>调用成功，并返回 JSON 数据</td>
+</tr>
+<tr>
+<td>返回数据 json(ok=1)，本接口没有ok=0返回</td>
+<td>ok</td>
+<td>成功ok=1</td>
+</tr>
+<tr>
+<td></td>
+<td>data</td>
+<td>返回数据</td>
+</tr>
+<tr>
+<td></td>
+<td>data.list</td>
+<td>服务商城市列表，是个数组</td>
+</tr>
+<tr>
+<td></td>
+<td>data.list.{key}</td>
+<td>服务商集合首字母</td>
+</tr>
+<tr>
+<td></td>
+<td>data.list.{value}</td>
+<td>首字母对应的服务商集合,是个数组</td>
+</tr>
+<tr>
+<td></td>
+<td>data.list.{value}.name</td>
+<td>服务商名称</td>
+</tr>
+<tr>
+<td></td>
+<td>data.list.{value}.provider_id</td>
+<td>服务商id</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>data.initials</td>
+<td>服务商城市首字母集合，是个数组</td>
+</tr>
+</tbody>
+</table>
+<h1 id="1-8-热门城市"><a href="#1-8-热门城市" class="headerlink" title="1.8 热门城市"></a>1.8 热门城市</h1><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HTTP 方法</td>
+<td>　</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>本地HTTP 地址</td>
+<td>　</td>
+<td><a href="http://api.test2.shushi100.com:8100/app/site/hot-city" target="_blank" rel="noopener">http://api.test2.shushi100.com:8100/app/site/hot-city</a></td>
+</tr>
+<tr>
+<td>正式服务器</td>
+<td>　</td>
+<td><a href="https://api.shushi100.com/app/site/hot-city" target="_blank" rel="noopener">https://api.shushi100.com/app/site/hot-city</a></td>
+</tr>
+<tr>
+<td>GET 参数</td>
+<td>无</td>
+<td></td>
+</tr>
+<tr>
+<td>返回状态</td>
+<td>200</td>
+<td>调用成功，并返回 JSON 数据</td>
+</tr>
+<tr>
+<td>返回数据 json(ok=1)，本接口没有ok=0返回</td>
+<td>ok</td>
+<td>成功ok=1</td>
+</tr>
+<tr>
+<td></td>
+<td>data</td>
+<td>返回数据</td>
+</tr>
+<tr>
+<td></td>
+<td>data.name</td>
+<td>服务商名称</td>
+</tr>
+<tr>
+<td></td>
+<td>data.provider_id</td>
+<td>服务商id</td>
+</tr>
+</tbody>
+</table>
+<h1 id="1-9-城市搜索"><a href="#1-9-城市搜索" class="headerlink" title="1.9 城市搜索"></a>1.9 城市搜索</h1><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HTTP 方法</td>
+<td>　</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>本地HTTP 地址</td>
+<td>　</td>
+<td><a href="http://api.test2.shushi100.com:8100/app/site/city-search" target="_blank" rel="noopener">http://api.test2.shushi100.com:8100/app/site/city-search</a></td>
+</tr>
+<tr>
+<td>正式服务器</td>
+<td>　</td>
+<td><a href="https://api.shushi100.com/app/site/city-search" target="_blank" rel="noopener">https://api.shushi100.com/app/site/city-search</a></td>
+</tr>
+<tr>
+<td>GET 参数</td>
+<td>search</td>
+<td>搜索内容，必填，字符串</td>
+</tr>
+<tr>
+<td></td>
+<td>page</td>
+<td>选填（整数），页码，默认1</td>
+</tr>
+<tr>
+<td></td>
+<td>pageSize</td>
+<td>选填（整数），条数，默认6</td>
+</tr>
+<tr>
+<td>返回状态</td>
+<td>200</td>
+<td>调用成功，并返回 JSON 数据</td>
+</tr>
+<tr>
+<td>返回数据 json(ok=1)，本接口没有ok=0返回</td>
+<td>ok</td>
+<td>成功ok=1</td>
+</tr>
+<tr>
+<td></td>
+<td>data</td>
+<td>返回数据</td>
+</tr>
+<tr>
+<td></td>
+<td>data.list</td>
+<td>是个数组</td>
+</tr>
+<tr>
+<td></td>
+<td>data.name</td>
+<td>服务商名称</td>
+</tr>
+<tr>
+<td></td>
+<td>data.provider_id</td>
+<td>服务商id</td>
+</tr>
+</tbody>
+</table>
+<h1 id="2-0-发现好物列表页"><a href="#2-0-发现好物列表页" class="headerlink" title="2.0 发现好物列表页"></a>2.0 发现好物列表页</h1><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HTTP 方法</td>
+<td>　</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>本地HTTP 地址</td>
+<td>　</td>
+<td><a href="http://api.test2.shushi100.com:8100/app/find/index" target="_blank" rel="noopener">http://api.test2.shushi100.com:8100/app/find/index</a></td>
+</tr>
+<tr>
+<td>正式服务器</td>
+<td>　</td>
+<td><a href="https://api.shushi100.com/app/find/index" target="_blank" rel="noopener">https://api.shushi100.com/app/find/index</a></td>
+</tr>
+<tr>
+<td>GET 参数</td>
+<td>provider_id</td>
+<td>服务商id，整形，必填</td>
+</tr>
+<tr>
+<td></td>
+<td>code</td>
+<td>发现好物分类code，字符串，选填</td>
+</tr>
+<tr>
+<td></td>
+<td>page</td>
+<td>选填（整数），页码，默认1</td>
+</tr>
+<tr>
+<td></td>
+<td>pageSize</td>
+<td>选填（整数），条数，默认6</td>
+</tr>
+<tr>
+<td>返回状态</td>
+<td>200</td>
+<td>调用成功，并返回 JSON 数据</td>
+</tr>
+<tr>
+<td></td>
+<td>data</td>
+<td>返回数据</td>
+</tr>
+<tr>
+<td></td>
+<td>data.cates</td>
+<td>分类列表，是个数组</td>
+</tr>
+<tr>
+<td></td>
+<td>data.cates.id</td>
+<td>分类id</td>
+</tr>
+<tr>
+<td></td>
+<td>data.cates.name</td>
+<td>分类名称</td>
+</tr>
+<tr>
+<td></td>
+<td>data.cates.code</td>
+<td>分类code</td>
+</tr>
+<tr>
+<td></td>
+<td>data.cates.current</td>
+<td>分类是否点亮</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>data.ad</td>
+<td>顶部幻灯片图片广告，是个数组</td>
+</tr>
+<tr>
+<td></td>
+<td>data.ad.id</td>
+<td>广告id</td>
+</tr>
+<tr>
+<td></td>
+<td>data.ad.title</td>
+<td>广告名称</td>
+</tr>
+<tr>
+<td></td>
+<td>data.ad.type</td>
+<td>广告类型</td>
+</tr>
+<tr>
+<td></td>
+<td>data.ad.typeName</td>
+<td>广告类型名称</td>
+</tr>
+<tr>
+<td></td>
+<td>data.ad.desc</td>
+<td>描述</td>
+</tr>
+<tr>
+<td></td>
+<td>data.ad.pic</td>
+<td>图片</td>
+</tr>
+<tr>
+<td></td>
+<td>data.ad.url</td>
+<td>链接地址</td>
+</tr>
+<tr>
+<td></td>
+<td>data.ad.belong_id</td>
+<td>所属id</td>
+</tr>
+<tr>
+<td></td>
+<td>data.ad.price</td>
+<td>商品价格</td>
+</tr>
+<tr>
+<td></td>
+<td>data.ad.code</td>
+<td>发现好物分类code</td>
+</tr>
+<tr>
+<td></td>
+<td>data.ad.category_id</td>
+<td>发现好物分类id</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>data.list</td>
+<td>发现好物列表数据，是个数组</td>
+</tr>
+<tr>
+<td></td>
+<td>data.list.id</td>
+<td>类型</td>
+</tr>
+<tr>
+<td></td>
+<td>data.list.title</td>
+<td>标题</td>
+</tr>
+<tr>
+<td></td>
+<td>data.list.sub_title</td>
+<td>副标题</td>
+</tr>
+<tr>
+<td></td>
+<td>data.list.view_count</td>
+<td>浏览量</td>
+</tr>
+<tr>
+<td></td>
+<td>data.list.time</td>
+<td>创建时间</td>
+</tr>
+<tr>
+<td></td>
+<td>data.list.type</td>
+<td>类型，值为1时，是多图模式，否则为单图模式</td>
+</tr>
+<tr>
+<td></td>
+<td>data.list.goodThingPic</td>
+<td>发现好物图片列表，是个数组</td>
+</tr>
+<tr>
+<td></td>
+<td>data.list.goodThingPic.id</td>
+<td>图片id</td>
+</tr>
+<tr>
+<td></td>
+<td>data.list.goodThingPic.picUrl</td>
+<td>图片地址</td>
+</tr>
+<tr>
+<td>返回数据 json(ok=0)</td>
+<td>ok</td>
+<td>失败ok=1</td>
+</tr>
+<tr>
+<td></td>
+<td>error</td>
+<td>错误信息</td>
+</tr>
+</tbody>
+</table>
+<h1 id="2-1-发现好物详情页-返回html页面源码"><a href="#2-1-发现好物详情页-返回html页面源码" class="headerlink" title="2.1 发现好物详情页(返回html页面源码)"></a>2.1 发现好物详情页(返回html页面源码)</h1><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HTTP 方法</td>
+<td>　</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>本地HTTP 地址</td>
+<td>　</td>
+<td><a href="http://api.test2.shushi100.com:8100/app/find/view/" target="_blank" rel="noopener">http://api.test2.shushi100.com:8100/app/find/view/</a></td>
+</tr>
+<tr>
+<td>正式服务器</td>
+<td>　</td>
+<td><a href="https://api.shushi100.com/app/find/view/" target="_blank" rel="noopener">https://api.shushi100.com/app/find/view/</a></td>
+</tr>
+<tr>
+<td>GET 参数</td>
+<td>id</td>
+<td>必填，整形，发现好物id</td>
+</tr>
+<tr>
+<td></td>
+<td>provider_id</td>
+<td>服务商id，整形，必填</td>
+</tr>
+<tr>
+<td>返回数据</td>
+<td></td>
+<td>html页面源码</td>
+</tr>
+</tbody>
+</table>
+<h1 id="2-2-服务网点列表页"><a href="#2-2-服务网点列表页" class="headerlink" title="2.2 服务网点列表页"></a>2.2 服务网点列表页</h1><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HTTP 方法</td>
+<td>　</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>本地HTTP 地址</td>
+<td>　</td>
+<td><a href="http://api.test2.shushi100.com:8100/app/expr/index" target="_blank" rel="noopener">http://api.test2.shushi100.com:8100/app/expr/index</a></td>
+</tr>
+<tr>
+<td>正式服务器</td>
+<td>　</td>
+<td><a href="https://api.shushi100.com/app/expr/index" target="_blank" rel="noopener">https://api.shushi100.com/app/expr/index</a></td>
+</tr>
+<tr>
+<td>GET 参数</td>
+<td>provider_id</td>
+<td>当前所在服务商id，整形，必填</td>
+</tr>
+<tr>
+<td></td>
+<td>search</td>
+<td>搜索内容，字符串，选填</td>
+</tr>
+<tr>
+<td></td>
+<td>page</td>
+<td>选填（整数），页码，默认1</td>
+</tr>
+<tr>
+<td></td>
+<td>pageSize</td>
+<td>选填（整数），条数，默认6</td>
+</tr>
+<tr>
+<td>返回状态</td>
+<td>200</td>
+<td>调用成功，并返回 JSON 数据</td>
+</tr>
+<tr>
+<td>返回数据 json(ok=1)，本接口没有ok=0返回</td>
+<td>ok</td>
+<td>成功ok=1</td>
+</tr>
+<tr>
+<td></td>
+<td>data</td>
+<td>返回数据</td>
+</tr>
+<tr>
+<td></td>
+<td>data.name</td>
+<td>服务商名称</td>
+</tr>
+<tr>
+<td></td>
+<td>data.address</td>
+<td>服务商地址</td>
+</tr>
+<tr>
+<td></td>
+<td>data.lng</td>
+<td>百度地图经度</td>
+</tr>
+<tr>
+<td></td>
+<td>data.lat</td>
+<td>百度地图纬度</td>
+</tr>
+</tbody>
+</table>
+<h1 id="2-3-领券中心"><a href="#2-3-领券中心" class="headerlink" title="2.3 领券中心"></a>2.3 领券中心</h1><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HTTP 方法</td>
+<td>　</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>本地HTTP 地址</td>
+<td>　</td>
+<td><a href="http://api.test2.shushi100.com:8100/app/coupon/index" target="_blank" rel="noopener">http://api.test2.shushi100.com:8100/app/coupon/index</a></td>
+</tr>
+<tr>
+<td>正式服务器</td>
+<td>　</td>
+<td><a href="https://api.shushi100.com/app/coupon/index" target="_blank" rel="noopener">https://api.shushi100.com/app/coupon/index</a></td>
+</tr>
+<tr>
+<td>GET 参数</td>
+<td>promotion_id</td>
+<td>活动id，整形，选填</td>
+</tr>
+<tr>
+<td></td>
+<td>provider_id</td>
+<td>服务商id，整形，必填</td>
+</tr>
+<tr>
+<td></td>
+<td>page</td>
+<td>选填（整数），页码，默认1</td>
+</tr>
+<tr>
+<td></td>
+<td>pageSize</td>
+<td>选填（整数），条数，默认6</td>
+</tr>
+<tr>
+<td>返回状态</td>
+<td>200</td>
+<td>调用成功，并返回 JSON 数据</td>
+</tr>
+<tr>
+<td>返回数据 json(ok=1)，本接口没有ok=0返回</td>
+<td>ok</td>
+<td>成功ok=1</td>
+</tr>
+<tr>
+<td></td>
+<td>data</td>
+<td>返回数据</td>
+</tr>
+<tr>
+<td></td>
+<td>data.list</td>
+<td>优惠券列表，是个数组</td>
+</tr>
+<tr>
+<td></td>
+<td>data.list.id</td>
+<td>优惠券id</td>
+</tr>
+<tr>
+<td></td>
+<td>data.list.cut</td>
+<td>优惠金额</td>
+</tr>
+<tr>
+<td></td>
+<td>data.list.full</td>
+<td>满额</td>
+</tr>
+<tr>
+<td></td>
+<td>data.list.region</td>
+<td>适用城市（最多显示4个）</td>
+</tr>
+<tr>
+<td></td>
+<td>data.list.all_region</td>
+<td>适用的所有城市，字符串</td>
+</tr>
+<tr>
+<td></td>
+<td>data.list.start_time</td>
+<td>开始时间</td>
+</tr>
+<tr>
+<td></td>
+<td>data.list.end_time</td>
+<td>到期时间</td>
+</tr>
+<tr>
+<td></td>
+<td>data.list.type</td>
+<td>类型，可能值1/2/3，1为未登录或者用户登录了没有领取（券的数量还有），2已经领取（已登录），3已抢光（已登录），券的数量为0</td>
+</tr>
+<tr>
+<td></td>
+<td>data.list.button</td>
+<td>按钮文字，“去使用”跳转到“活动商品列表”</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>data.activity</td>
+<td>活动列表，是个数组</td>
+</tr>
+<tr>
+<td></td>
+<td>data.activity.id</td>
+<td>活动id</td>
+</tr>
+<tr>
+<td></td>
+<td>data.activity.name</td>
+<td>活动名称</td>
+</tr>
+<tr>
+<td></td>
+<td>data.activity.current</td>
+<td>活动是否点亮</td>
+</tr>
+</tbody>
+</table>
+<h1 id="2-4-领取优惠券-需要token访问"><a href="#2-4-领取优惠券-需要token访问" class="headerlink" title="2.4 领取优惠券++++需要token访问"></a>2.4 领取优惠券++++需要token访问</h1><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HTTP 方法</td>
+<td>　</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>本地HTTP 地址</td>
+<td>　</td>
+<td><a href="http://api.test2.shushi100.com:8100/app/coupon/ajax-give-coupon" target="_blank" rel="noopener">http://api.test2.shushi100.com:8100/app/coupon/ajax-give-coupon</a></td>
+</tr>
+<tr>
+<td>正式服务器</td>
+<td>　</td>
+<td><a href="https://api.shushi100.com/app/coupon/ajax-give-coupon" target="_blank" rel="noopener">https://api.shushi100.com/app/coupon/ajax-give-coupon</a></td>
+</tr>
+<tr>
+<td>GET 参数</td>
+<td>coupon_id</td>
+<td>优惠券id，整形，必填</td>
+</tr>
+<tr>
+<td>返回状态</td>
+<td>200</td>
+<td>调用成功，并返回 JSON 数据</td>
+</tr>
+<tr>
+<td>返回数据 json(ok=1)</td>
+<td>ok</td>
+<td>成功ok=1，领券成功</td>
+</tr>
+<tr>
+<td></td>
+<td>data</td>
+<td>返回数据，这里返回空数组</td>
+</tr>
+<tr>
+<td>返回数据 json(ok=0)</td>
+<td>ok</td>
+<td>失败ok=0</td>
+</tr>
+<tr>
+<td></td>
+<td>error</td>
+<td>错误信息</td>
+</tr>
+</tbody>
+</table>
+<h1 id="2-5-活动商品列表"><a href="#2-5-活动商品列表" class="headerlink" title="2.5 活动商品列表"></a>2.5 活动商品列表</h1><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HTTP 方法</td>
+<td>　</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>本地HTTP 地址</td>
+<td>　</td>
+<td><a href="http://api.test2.shushi100.com:8100/app/sale/index" target="_blank" rel="noopener">http://api.test2.shushi100.com:8100/app/sale/index</a></td>
+</tr>
+<tr>
+<td>正式服务器</td>
+<td>　</td>
+<td><a href="https://api.shushi100.com/app/sale/index" target="_blank" rel="noopener">https://api.shushi100.com/app/sale/index</a></td>
+</tr>
+<tr>
+<td>GET 参数</td>
+<td>coupon_id</td>
+<td>优惠券id，整形，必填</td>
+</tr>
+<tr>
+<td></td>
+<td>provider_id</td>
+<td>服务商id，整形，必填</td>
+</tr>
+<tr>
+<td></td>
+<td>code</td>
+<td>分类code，字符串，选填</td>
+</tr>
+<tr>
+<td>返回状态</td>
+<td>200</td>
+<td>200成功，并返回 JSON 数据</td>
+</tr>
+<tr>
+<td>返回数据 json(ok=1)，本接口没有ok=0返回</td>
+<td>ok</td>
+<td>成功ok=1</td>
+</tr>
+<tr>
+<td></td>
+<td>data</td>
+<td>返回数据</td>
+</tr>
+<tr>
+<td></td>
+<td>data.list</td>
+<td>商品列表，是个数组</td>
+</tr>
+<tr>
+<td></td>
+<td>data.list.id</td>
+<td>产品id</td>
+</tr>
+<tr>
+<td></td>
+<td>data.list.title</td>
+<td>产品标题</td>
+</tr>
+<tr>
+<td></td>
+<td>data.list.pic_url</td>
+<td>产品图片</td>
+</tr>
+<tr>
+<td></td>
+<td>data.list.price</td>
+<td>价格</td>
+</tr>
+<tr>
+<td></td>
+<td>data.list.market_price</td>
+<td>市场价格</td>
+</tr>
+<tr>
+<td></td>
+<td>data.list.url</td>
+<td>链接</td>
+</tr>
+<tr>
+<td></td>
+<td>data.list.tag_name</td>
+<td>标签</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>data.category</td>
+<td>分类列表，是个数组</td>
+</tr>
+<tr>
+<td></td>
+<td>data.category.id</td>
+<td>分类id</td>
+</tr>
+<tr>
+<td></td>
+<td>data.category.code</td>
+<td>分类code</td>
+</tr>
+<tr>
+<td></td>
+<td>data.category.name</td>
+<td>分类名称</td>
+</tr>
+<tr>
+<td></td>
+<td>data.category.url</td>
+<td>当前分类是否点亮</td>
+</tr>
+</tbody>
+</table>
+<h1 id="2-6-新人有礼"><a href="#2-6-新人有礼" class="headerlink" title="2.6 新人有礼"></a>2.6 新人有礼</h1><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HTTP 方法</td>
+<td>　</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>本地HTTP 地址</td>
+<td>　</td>
+<td><a href="http://api.test2.shushi100.com:8100/app/coupon/xinren" target="_blank" rel="noopener">http://api.test2.shushi100.com:8100/app/coupon/xinren</a></td>
+</tr>
+<tr>
+<td>正式服务器</td>
+<td>　</td>
+<td><a href="https://api.shushi100.com/app/coupon/xinren" target="_blank" rel="noopener">https://api.shushi100.com/app/coupon/xinren</a></td>
+</tr>
+<tr>
+<td>GET 参数</td>
+<td>provider_id</td>
+<td>服务商id，整形，必填</td>
+</tr>
+<tr>
+<td></td>
+<td>page</td>
+<td>选填（整数），页码，默认1</td>
+</tr>
+<tr>
+<td></td>
+<td>pageSize</td>
+<td>选填（整数），条数，默认6</td>
+</tr>
+<tr>
+<td>返回状态</td>
+<td>200</td>
+<td>调用成功，并返回 JSON 数据</td>
+</tr>
+<tr>
+<td>返回数据 json(ok=1)，本接口没有ok=0返回</td>
+<td>ok</td>
+<td>成功ok=1</td>
+</tr>
+<tr>
+<td></td>
+<td>data</td>
+<td>返回数据</td>
+</tr>
+<tr>
+<td></td>
+<td>data.list</td>
+<td>优惠券列表，是个数组</td>
+</tr>
+<tr>
+<td></td>
+<td>data.list.id</td>
+<td>优惠券id</td>
+</tr>
+<tr>
+<td></td>
+<td>data.list.cut</td>
+<td>优惠金额</td>
+</tr>
+<tr>
+<td></td>
+<td>data.list.full</td>
+<td>满额</td>
+</tr>
+<tr>
+<td></td>
+<td>data.list.region</td>
+<td>适用城市（最多显示4个）</td>
+</tr>
+<tr>
+<td></td>
+<td>data.list.all_region</td>
+<td>适用的所有城市，字符串</td>
+</tr>
+<tr>
+<td></td>
+<td>data.list.start_time</td>
+<td>开始时间</td>
+</tr>
+<tr>
+<td></td>
+<td>data.list.end_time</td>
+<td>到期时间</td>
+</tr>
+<tr>
+<td></td>
+<td>data.list.type</td>
+<td>类型，可能值1/2/3，1为未登录或者用户登录了没有领取（券的数量还有），2已经领取（已登录），3已抢光（已登录），券的数量为0</td>
+</tr>
+<tr>
+<td></td>
+<td>data.list.button</td>
+<td>按钮文字，“去使用”跳转到“活动商品列表”</td>
+</tr>
+</tbody>
+</table>
+<h1 id="2-7-热销排行榜"><a href="#2-7-热销排行榜" class="headerlink" title="2.7 热销排行榜"></a>2.7 热销排行榜</h1><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HTTP 方法</td>
+<td>　</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>本地HTTP 地址</td>
+<td>　</td>
+<td><a href="http://api.test2.shushi100.com:8100/app/hot-top/index" target="_blank" rel="noopener">http://api.test2.shushi100.com:8100/app/hot-top/index</a></td>
+</tr>
+<tr>
+<td>正式服务器</td>
+<td>　</td>
+<td><a href="https://api.shushi100.com/app/hot-top/index" target="_blank" rel="noopener">https://api.shushi100.com/app/hot-top/index</a></td>
+</tr>
+<tr>
+<td>GET 参数</td>
+<td>category_id</td>
+<td>系统分类id，选填，整数</td>
+</tr>
+<tr>
+<td></td>
+<td>provider_id</td>
+<td>服务商id，必填，整数</td>
+</tr>
+<tr>
+<td></td>
+<td>page</td>
+<td>选填（整数），页码，默认1</td>
+</tr>
+<tr>
+<td></td>
+<td>pageSize</td>
+<td>选填（整数），条数，默认6</td>
+</tr>
+<tr>
+<td>返回状态</td>
+<td>200</td>
+<td>调用成功，并返回 JSON 数据</td>
+</tr>
+<tr>
+<td>返回数据 json(ok=1)，本接口没有ok=0返回</td>
+<td>ok</td>
+<td>成功ok=1</td>
+</tr>
+<tr>
+<td></td>
+<td>data</td>
+<td>返回数据</td>
+</tr>
+<tr>
+<td></td>
+<td>data.product</td>
+<td>产品列表，是个数组</td>
+</tr>
+<tr>
+<td></td>
+<td>data.product.id</td>
+<td>产品id</td>
+</tr>
+<tr>
+<td></td>
+<td>data.product.title</td>
+<td>产品标题</td>
+</tr>
+<tr>
+<td></td>
+<td>data.product.pic_url</td>
+<td>产品图片</td>
+</tr>
+<tr>
+<td></td>
+<td>data.product.price</td>
+<td>价格</td>
+</tr>
+<tr>
+<td></td>
+<td>data.product.market_price</td>
+<td>市场价格</td>
+</tr>
+<tr>
+<td></td>
+<td>data.product.tag_name</td>
+<td>标签</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>data.category</td>
+<td>分类列表，是个数组</td>
+</tr>
+<tr>
+<td></td>
+<td>data.category.id</td>
+<td>分类id</td>
+</tr>
+<tr>
+<td></td>
+<td>data.category.code</td>
+<td>分类code</td>
+</tr>
+<tr>
+<td></td>
+<td>data.category.name</td>
+<td>分类名称</td>
+</tr>
+<tr>
+<td></td>
+<td>data.category.current</td>
+<td>分类是否点亮</td>
+</tr>
+</tbody>
+</table>
+<h1 id="2-8-热门搜索"><a href="#2-8-热门搜索" class="headerlink" title="2.8 热门搜索"></a>2.8 热门搜索</h1><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HTTP 方法</td>
+<td>　</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>本地HTTP 地址</td>
+<td>　</td>
+<td><a href="http://api.test2.shushi100.com:8100/app/search/index" target="_blank" rel="noopener">http://api.test2.shushi100.com:8100/app/search/index</a></td>
+</tr>
+<tr>
+<td>正式服务器</td>
+<td>　</td>
+<td><a href="https://api.shushi100.com/app/search/index" target="_blank" rel="noopener">https://api.shushi100.com/app/search/index</a></td>
+</tr>
+<tr>
+<td>GET 参数</td>
+<td>provider_id</td>
+<td>服务商id，整形，必填</td>
+</tr>
+<tr>
+<td>返回状态</td>
+<td>200</td>
+<td>调用成功，并返回 JSON 数据</td>
+</tr>
+<tr>
+<td>返回数据 json(ok=1)，本接口没有ok=0返回</td>
+<td>ok</td>
+<td>成功ok=1</td>
+</tr>
+<tr>
+<td></td>
+<td>data</td>
+<td>返回数据</td>
+</tr>
+<tr>
+<td></td>
+<td>data.hot_keywords</td>
+<td>热门搜索词列表，是个数组</td>
+</tr>
+</tbody>
+</table>
+<h1 id="2-9-搜索结果"><a href="#2-9-搜索结果" class="headerlink" title="2.9 搜索结果"></a>2.9 搜索结果</h1><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HTTP 方法</td>
+<td>　</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>本地HTTP 地址</td>
+<td>　</td>
+<td><a href="http://api.test2.shushi100.com:8100/app/search/to-do" target="_blank" rel="noopener">http://api.test2.shushi100.com:8100/app/search/to-do</a></td>
+</tr>
+<tr>
+<td>正式服务器</td>
+<td>　</td>
+<td><a href="https://api.shushi100.com/app/search/to-do" target="_blank" rel="noopener">https://api.shushi100.com/app/search/to-do</a></td>
+</tr>
+<tr>
+<td>GET 参数</td>
+<td>provider_id</td>
+<td>当前服务商id，整形，必填</td>
+</tr>
+<tr>
+<td></td>
+<td>search</td>
+<td>搜索内容，字符串，必填，不能为空</td>
+</tr>
+<tr>
+<td></td>
+<td>mold</td>
+<td>选填，默认值是1，搜索商品，搜索类型（可选值1/2/3/4/5）<br>1值代表搜索商品，2代表搜索文章，3代表搜索效果图，4代表搜索工程案例，5代表搜索问答</td>
+</tr>
+<tr>
+<td></td>
+<td>page</td>
+<td>选填（整数），页码，默认1</td>
+</tr>
+<tr>
+<td></td>
+<td>pageSize</td>
+<td>选填（整数），条数，默认6</td>
+</tr>
+<tr>
+<td>返回状态</td>
+<td>200</td>
+<td>调用成功，并返回 JSON 数据</td>
+</tr>
+<tr>
+<td>返回数据 json(ok=1)</td>
+<td>ok</td>
+<td>成功ok=1</td>
+</tr>
+<tr>
+<td></td>
+<td>data</td>
+<td>返回数据</td>
+</tr>
+<tr>
+<td></td>
+<td>data.list</td>
+<td>主列表数据，是个数组，mold参数为1时，list代表商品列表， mold参数为2时，list代表文章列表，mold参数为3时，list代表效果图列表，mold参数为4时，list代表工程案例列表，mold参数为5时，list代表问答列表</td>
+</tr>
+<tr>
+<td></td>
+<td>　～～～～～～～～～～～～～～</td>
+<td>分割线</td>
+</tr>
+<tr>
+<td></td>
+<td>data.list为商品列表时</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>data.list.id</td>
+<td>产品id</td>
+</tr>
+<tr>
+<td></td>
+<td>data.list.title</td>
+<td>产品标题</td>
+</tr>
+<tr>
+<td></td>
+<td>data.list.pic_url</td>
+<td>产品图片</td>
+</tr>
+<tr>
+<td></td>
+<td>data.list.price</td>
+<td>价格</td>
+</tr>
+<tr>
+<td></td>
+<td>data.list.market_price</td>
+<td>市场价格</td>
+</tr>
+<tr>
+<td></td>
+<td>data.list.tag_name</td>
+<td>标签</td>
+</tr>
+<tr>
+<td></td>
+<td>　～～～～～～～～～～～～～～</td>
+<td>分割线</td>
+</tr>
+<tr>
+<td></td>
+<td>data.list为文章列表时</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>data.list.id</td>
+<td>文章id</td>
+</tr>
+<tr>
+<td></td>
+<td>data.list.title</td>
+<td>文章标题</td>
+</tr>
+<tr>
+<td></td>
+<td>data.list.summary</td>
+<td>文章描述</td>
+</tr>
+<tr>
+<td></td>
+<td>data.list.categoryName</td>
+<td>文章系统类型</td>
+</tr>
+<tr>
+<td></td>
+<td>data.list.firstPic</td>
+<td>文章图片</td>
+</tr>
+<tr>
+<td></td>
+<td>　～～～～～～～～～～～～～～</td>
+<td>分割线</td>
+</tr>
+<tr>
+<td></td>
+<td>data.list为效果图时</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>data.list.id</td>
+<td>效果图id</td>
+</tr>
+<tr>
+<td></td>
+<td>data.list.title</td>
+<td>效果图标题</td>
+</tr>
+<tr>
+<td></td>
+<td>data.list.picUrl</td>
+<td>效果图图片</td>
+</tr>
+<tr>
+<td></td>
+<td>　～～～～～～～～～～～～～～</td>
+<td>分割线</td>
+</tr>
+<tr>
+<td></td>
+<td>data.list为工程案例时</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>data.list.id</td>
+<td>工程案例id</td>
+</tr>
+<tr>
+<td></td>
+<td>data.list.title</td>
+<td>工程案例标题</td>
+</tr>
+<tr>
+<td></td>
+<td>data.list.sub_title</td>
+<td>工程案例描述</td>
+</tr>
+<tr>
+<td></td>
+<td>data.list.picUrl</td>
+<td>工程案例图片</td>
+</tr>
+<tr>
+<td></td>
+<td>　～～～～～～～～～～～～～～</td>
+<td>分割线</td>
+</tr>
+<tr>
+<td></td>
+<td>data.list为问答时</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>data.list.id</td>
+<td>问题id</td>
+</tr>
+<tr>
+<td></td>
+<td>data.list.title</td>
+<td>问题标题</td>
+</tr>
+<tr>
+<td></td>
+<td>data.list.askCategoryName</td>
+<td>问题分类</td>
+</tr>
+<tr>
+<td></td>
+<td>data.list.replyNum</td>
+<td>问题的答案数</td>
+</tr>
+<tr>
+<td></td>
+<td>data.list.createdAt</td>
+<td>问题创建时间</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>data.search</td>
+<td>当前搜索内容的内容</td>
+</tr>
+<tr>
+<td></td>
+<td>data.mold</td>
+<td>当前搜索类型</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>data.types</td>
+<td>搜索类型列表，是个数组</td>
+</tr>
+<tr>
+<td></td>
+<td>data.types.id</td>
+<td>类型id</td>
+</tr>
+<tr>
+<td></td>
+<td>data.types.name</td>
+<td>类型名称</td>
+</tr>
+<tr>
+<td></td>
+<td>data.types.current</td>
+<td>是否是当前搜索类型</td>
+</tr>
+<tr>
+<td>返回数据 json(ok=0)</td>
+<td>ok</td>
+<td>失败ok=0</td>
+</tr>
+<tr>
+<td></td>
+<td>error</td>
+<td>错误信息</td>
+</tr>
+</tbody>
+</table>
+<h1 id="3-0-效果图"><a href="#3-0-效果图" class="headerlink" title="3.0 效果图"></a>3.0 效果图</h1><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HTTP 方法</td>
+<td>　</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>本地HTTP 地址</td>
+<td>　</td>
+<td><a href="http://api.test2.shushi100.com:8100/app/albums/{$property}/" target="_blank" rel="noopener">http://api.test2.shushi100.com:8100/app/albums/{$property}/</a></td>
+</tr>
+<tr>
+<td>正式服务器</td>
+<td>　</td>
+<td><a href="https://api.shushi100.com/app/albums/{$property}/" target="_blank" rel="noopener">https://api.shushi100.com/app/albums/{$property}/</a></td>
+</tr>
+<tr>
+<td>GET 参数</td>
+<td>{$property}</td>
+<td>筛选属性，字符串，选填，例如筛选属性为c-0-1，那么请求的api是<a href="http://api.test2.shushi100.com:8100/app/albums/c-0-1/或者https://api.shushi100.com/app/albums/c-0-1/" target="_blank" rel="noopener">http://api.test2.shushi100.com:8100/app/albums/c-0-1/或者https://api.shushi100.com/app/albums/c-0-1/</a></td>
+</tr>
+<tr>
+<td></td>
+<td>page</td>
+<td>选填（整数），页码，默认1，本接口如果传页码，需要注意api链接最后的/，例如<a href="http://api.shushi100.local/app/albums/c-0-1-page2/或者http://api.shushi100.local/app/albums/c-0-1/?page=2" target="_blank" rel="noopener">http://api.shushi100.local/app/albums/c-0-1-page2/或者http://api.shushi100.local/app/albums/c-0-1/?page=2</a></td>
+</tr>
+<tr>
+<td></td>
+<td>pageSize</td>
+<td>选填（整数），条数，默认6，本接口如果传条数，需要注意api链接最后的/，例如<a href="http://api.shushi100.local/app/albums/c-0-1/?pageSize=10" target="_blank" rel="noopener">http://api.shushi100.local/app/albums/c-0-1/?pageSize=10</a></td>
+</tr>
+<tr>
+<td>返回状态</td>
+<td>200</td>
+<td>调用成功，并返回 JSON 数据</td>
+</tr>
+<tr>
+<td>返回数据 json(ok=1)，本接口没有ok=0返回</td>
+<td>ok</td>
+<td>成功ok=1</td>
+</tr>
+<tr>
+<td></td>
+<td>data</td>
+<td>返回数据</td>
+</tr>
+<tr>
+<td></td>
+<td>data.system</td>
+<td>系统，是个数组</td>
+</tr>
+<tr>
+<td></td>
+<td>data.system.name</td>
+<td>名称</td>
+</tr>
+<tr>
+<td></td>
+<td>data.system.current</td>
+<td>系统是否点亮</td>
+</tr>
+<tr>
+<td></td>
+<td>data.system.url</td>
+<td>请求api地址</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>data.houseType</td>
+<td>户型，是个数组</td>
+</tr>
+<tr>
+<td></td>
+<td>data.houseType.name</td>
+<td>名称</td>
+</tr>
+<tr>
+<td></td>
+<td>data.houseType.current</td>
+<td>户型是否点亮</td>
+</tr>
+<tr>
+<td></td>
+<td>data.houseType.url</td>
+<td>请求api地址</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>data.sort</td>
+<td>排序，是个数组</td>
+</tr>
+<tr>
+<td></td>
+<td>data.sort.name</td>
+<td>名称</td>
+</tr>
+<tr>
+<td></td>
+<td>data.sort.name</td>
+<td>排序是否点亮</td>
+</tr>
+<tr>
+<td></td>
+<td>data.sort.url</td>
+<td>请求api地址</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>data.list</td>
+<td>类别数据，是个数组</td>
+</tr>
+<tr>
+<td></td>
+<td>data.list.id</td>
+<td>效果图图片id</td>
+</tr>
+<tr>
+<td></td>
+<td>data.list.title</td>
+<td>标题</td>
+</tr>
+<tr>
+<td></td>
+<td>data.list.picUrl</td>
+<td>图片地址</td>
+</tr>
+</tbody>
+</table>
+<h1 id="3-1-效果图详情-注意参数id的传法"><a href="#3-1-效果图详情-注意参数id的传法" class="headerlink" title="3.1 效果图详情++++++注意参数id的传法"></a>3.1 效果图详情++++++注意参数id的传法</h1><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HTTP 方法</td>
+<td>　</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>本地HTTP 地址</td>
+<td>　</td>
+<td><a href="http://api.test2.shushi100.com:8100/app/albums/g-{$id}/" target="_blank" rel="noopener">http://api.test2.shushi100.com:8100/app/albums/g-{$id}/</a></td>
+</tr>
+<tr>
+<td>正式服务器</td>
+<td>　</td>
+<td><a href="https://api.shushi100.com/app/albums/g-{$id}/" target="_blank" rel="noopener">https://api.shushi100.com/app/albums/g-{$id}/</a></td>
+</tr>
+<tr>
+<td>GET 参数</td>
+<td>{$id}</td>
+<td>效果图图片id，整形，必填，例如效果图id=5，那么请求的api是<a href="http://api.test2.shushi100.com:8100/app/albums/g-5/或者https://api.shushi100.com/app/albums/g-5/" target="_blank" rel="noopener">http://api.test2.shushi100.com:8100/app/albums/g-5/或者https://api.shushi100.com/app/albums/g-5/</a></td>
+</tr>
+<tr>
+<td>返回状态</td>
+<td>200</td>
+<td>调用成功，并返回 JSON 数据</td>
+</tr>
+<tr>
+<td>返回数据 json(ok=1)</td>
+<td>ok</td>
+<td>成功ok=1</td>
+</tr>
+<tr>
+<td></td>
+<td>data</td>
+<td>返回数据</td>
+</tr>
+<tr>
+<td></td>
+<td>data.current</td>
+<td>当前效果图</td>
+</tr>
+<tr>
+<td></td>
+<td>data.current.id</td>
+<td>效果图图片id</td>
+</tr>
+<tr>
+<td></td>
+<td>data.current.title</td>
+<td>标题</td>
+</tr>
+<tr>
+<td></td>
+<td>data.current.picUrl</td>
+<td>图片</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>data.preImg</td>
+<td>上一张效果图</td>
+</tr>
+<tr>
+<td></td>
+<td>data.preImg.id</td>
+<td>效果图图片id</td>
+</tr>
+<tr>
+<td></td>
+<td>data.preImg.title</td>
+<td>标题</td>
+</tr>
+<tr>
+<td></td>
+<td>data.preImg.picUrl</td>
+<td>图片</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>data.nextImg</td>
+<td>下一张效果图</td>
+</tr>
+<tr>
+<td></td>
+<td>data.nextImg.id</td>
+<td>效果图图片id</td>
+</tr>
+<tr>
+<td></td>
+<td>data.nextImg.title</td>
+<td>标题</td>
+</tr>
+<tr>
+<td></td>
+<td>data.nextImg.picUrl</td>
+<td>图片</td>
+</tr>
+<tr>
+<td>返回数据 json(ok=0)</td>
+<td>ok</td>
+<td>失败ok=0</td>
+</tr>
+<tr>
+<td></td>
+<td>error</td>
+<td>错误信息</td>
+</tr>
+</tbody>
+</table>
+<h1 id="3-2-工程案例"><a href="#3-2-工程案例" class="headerlink" title="3.2 工程案例"></a>3.2 工程案例</h1><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HTTP 方法</td>
+<td>　</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>本地HTTP 地址</td>
+<td>　</td>
+<td><a href="http://api.test2.shushi100.com:8100/app/project/{$property}/" target="_blank" rel="noopener">http://api.test2.shushi100.com:8100/app/project/{$property}/</a></td>
+</tr>
+<tr>
+<td>正式服务器</td>
+<td>　</td>
+<td><a href="https://api.shushi100.com/app/project/{$property}/" target="_blank" rel="noopener">https://api.shushi100.com/app/project/{$property}/</a></td>
+</tr>
+<tr>
+<td>GET 参数</td>
+<td>{$property}</td>
+<td>筛选属性，字符串，选填，例如筛选属性为c-5，那么请求的api是<a href="http://api.test2.shushi100.com:8100/app/project/c-5/或者https://api.shushi100.com/app/project/c-5/" target="_blank" rel="noopener">http://api.test2.shushi100.com:8100/app/project/c-5/或者https://api.shushi100.com/app/project/c-5/</a></td>
+</tr>
+<tr>
+<td></td>
+<td>page</td>
+<td>选填（整数），页码，默认1，本接口如果传页码，需要注意api链接最后的/，例如<a href="http://api.shushi100.local/app/project/c-5-page2/或者http://api.shushi100.local/app/project/c-5/?page=2" target="_blank" rel="noopener">http://api.shushi100.local/app/project/c-5-page2/或者http://api.shushi100.local/app/project/c-5/?page=2</a></td>
+</tr>
+<tr>
+<td></td>
+<td>pageSize</td>
+<td>选填（整数），条数，默认6，本接口如果传条数，需要注意api链接最后的/，例如<a href="http://api.shushi100.local/app/project/c-5/?pageSize=10" target="_blank" rel="noopener">http://api.shushi100.local/app/project/c-5/?pageSize=10</a></td>
+</tr>
+<tr>
+<td>返回状态</td>
+<td>200</td>
+<td>调用成功，并返回 JSON 数据</td>
+</tr>
+<tr>
+<td>返回数据 json(ok=1)，本接口没有ok=0返回</td>
+<td>ok</td>
+<td>成功ok=1</td>
+</tr>
+<tr>
+<td></td>
+<td>data</td>
+<td>返回数据</td>
+</tr>
+<tr>
+<td></td>
+<td>data.system</td>
+<td>系统，是个数组</td>
+</tr>
+<tr>
+<td></td>
+<td>data.system.name</td>
+<td>名称</td>
+</tr>
+<tr>
+<td></td>
+<td>data.houseType.current</td>
+<td>系统是否点亮</td>
+</tr>
+<tr>
+<td></td>
+<td>data.houseType.url</td>
+<td>请求api地址</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>data.houseType</td>
+<td>户型，是个数组</td>
+</tr>
+<tr>
+<td></td>
+<td>data.houseType.name</td>
+<td>名称</td>
+</tr>
+<tr>
+<td></td>
+<td>data.houseType.current</td>
+<td>户型是否点亮</td>
+</tr>
+<tr>
+<td></td>
+<td>data.houseType.url</td>
+<td>请求api地址</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>data.sort</td>
+<td>排序，是个数组</td>
+</tr>
+<tr>
+<td></td>
+<td>data.sort.name</td>
+<td>名称</td>
+</tr>
+<tr>
+<td></td>
+<td>data.houseType.current</td>
+<td>排序是否点亮</td>
+</tr>
+<tr>
+<td></td>
+<td>data.houseType.url</td>
+<td>请求api地址</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>data.list</td>
+<td>列表数据，是个数组</td>
+</tr>
+<tr>
+<td></td>
+<td>data.list.id</td>
+<td>工程案例id</td>
+</tr>
+<tr>
+<td></td>
+<td>data.list.title</td>
+<td>标题</td>
+</tr>
+<tr>
+<td></td>
+<td>data.list.picUrl</td>
+<td>图片地址</td>
+</tr>
+</tbody>
+</table>
+<h2 id="3-3-工程案例详情-返回html页面源码-注意参数id的传法"><a href="#3-3-工程案例详情-返回html页面源码-注意参数id的传法" class="headerlink" title="3.3 工程案例详情(返回html页面源码)++++++注意参数id的传法"></a>3.3 工程案例详情(返回html页面源码)++++++注意参数id的传法</h2><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HTTP 方法</td>
+<td>　</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>HTTP 地址</td>
+<td>　</td>
+<td><a href="http://m.shushi100.local/app/project/item-{$id}/" target="_blank" rel="noopener">http://m.shushi100.local/app/project/item-{$id}/</a></td>
+</tr>
+<tr>
+<td>测试服务器</td>
+<td>　</td>
+<td><a href="http://m.shushi100.com/app/project/item-{$id}/" target="_blank" rel="noopener">http://m.shushi100.com/app/project/item-{$id}/</a></td>
+</tr>
+<tr>
+<td>GET 参数</td>
+<td>{$id}</td>
+<td>工程案例id，整形，必填，例如工程案例id=5，那么请求的api是<a href="http://api.test2.shushi100.com:8100/app/project/item-5/或者https://api.shushi100.com/app/project/item-5/" target="_blank" rel="noopener">http://api.test2.shushi100.com:8100/app/project/item-5/或者https://api.shushi100.com/app/project/item-5/</a></td>
+</tr>
+<tr>
+<td>返回数据</td>
+<td></td>
+<td>html页面源码</td>
+</tr>
+</tbody>
+</table>
+<h1 id="3-4-舒适问答首页"><a href="#3-4-舒适问答首页" class="headerlink" title="3.4 舒适问答首页"></a>3.4 舒适问答首页</h1><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HTTP 方法</td>
+<td>　</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>本地HTTP 地址</td>
+<td>　</td>
+<td><a href="http://api.test2.shushi100.com:8100/app/ask/index" target="_blank" rel="noopener">http://api.test2.shushi100.com:8100/app/ask/index</a></td>
+</tr>
+<tr>
+<td>正式服务器</td>
+<td>　</td>
+<td><a href="https://api.shushi100.com/app/ask/index" target="_blank" rel="noopener">https://api.shushi100.com/app/ask/index</a></td>
+</tr>
+<tr>
+<td>GET 参数</td>
+<td>provider_id</td>
+<td>当前服务商id，整形，必填</td>
+</tr>
+<tr>
+<td></td>
+<td>sort</td>
+<td>排序，字符串，选填，默认“最新问题”，“热门问答”排序填写“hot”</td>
+</tr>
+<tr>
+<td>返回状态</td>
+<td>200</td>
+<td>调用成功，并返回 JSON 数据</td>
+</tr>
+<tr>
+<td>返回数据 json(ok=1)，本接口没有ok=0返回</td>
+<td>ok</td>
+<td>成功ok=1</td>
+</tr>
+<tr>
+<td></td>
+<td>data</td>
+<td>返回数据</td>
+</tr>
+<tr>
+<td></td>
+<td>data.cate</td>
+<td>一级分类，是个数组</td>
+</tr>
+<tr>
+<td></td>
+<td>data.cate.id</td>
+<td>分类id</td>
+</tr>
+<tr>
+<td></td>
+<td>data.cate.name</td>
+<td>名称</td>
+</tr>
+<tr>
+<td></td>
+<td>data.cate.current</td>
+<td>是否点亮</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>data.slide</td>
+<td>幻灯片，是个数组</td>
+</tr>
+<tr>
+<td></td>
+<td>data.slide.id</td>
+<td>幻灯片id</td>
+</tr>
+<tr>
+<td></td>
+<td>data.slide.title</td>
+<td>幻灯片名称</td>
+</tr>
+<tr>
+<td></td>
+<td>data.slide.type</td>
+<td>幻灯片类型</td>
+</tr>
+<tr>
+<td></td>
+<td>data.slide.typeName</td>
+<td>幻灯片类型名称</td>
+</tr>
+<tr>
+<td></td>
+<td>data.slide.desc</td>
+<td>幻灯片描述</td>
+</tr>
+<tr>
+<td></td>
+<td>data.slide.pic</td>
+<td>幻灯片图片</td>
+</tr>
+<tr>
+<td></td>
+<td>data.slide.url</td>
+<td>链接地址</td>
+</tr>
+<tr>
+<td></td>
+<td>data.slide.belong_id</td>
+<td>所属id</td>
+</tr>
+<tr>
+<td></td>
+<td>data.slide.price</td>
+<td>商品价格</td>
+</tr>
+<tr>
+<td></td>
+<td>data.slide.code</td>
+<td>系统code</td>
+</tr>
+<tr>
+<td></td>
+<td>data.slide.category_id</td>
+<td>系统id</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>data.sorts</td>
+<td>排序，是个数组</td>
+</tr>
+<tr>
+<td></td>
+<td>data.sorts.name</td>
+<td>名称</td>
+</tr>
+<tr>
+<td></td>
+<td>data.sorts.current</td>
+<td>排序是否点亮</td>
+</tr>
+<tr>
+<td></td>
+<td>data.sorts.url</td>
+<td>请求api地址</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>data.list</td>
+<td>列表数据，是个数组</td>
+</tr>
+<tr>
+<td></td>
+<td>data.list.id</td>
+<td>问题id</td>
+</tr>
+<tr>
+<td></td>
+<td>data.list.title</td>
+<td>问题标题</td>
+</tr>
+<tr>
+<td></td>
+<td>data.list.askCategoryName</td>
+<td>问题分类名称</td>
+</tr>
+<tr>
+<td></td>
+<td>data.list.replyNum</td>
+<td>问题的答案数量</td>
+</tr>
+<tr>
+<td></td>
+<td>data.list.createdAt</td>
+<td>创建时间</td>
+</tr>
+</tbody>
+</table>
+<h1 id="3-5-舒适问答列表页"><a href="#3-5-舒适问答列表页" class="headerlink" title="3.5 舒适问答列表页"></a>3.5 舒适问答列表页</h1><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HTTP 方法</td>
+<td>　</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>本地HTTP 地址</td>
+<td>　</td>
+<td><a href="http://api.test2.shushi100.com:8100/app/ask/list" target="_blank" rel="noopener">http://api.test2.shushi100.com:8100/app/ask/list</a></td>
+</tr>
+<tr>
+<td>正式服务器</td>
+<td>　</td>
+<td><a href="https://api.shushi100.com/app/ask/list" target="_blank" rel="noopener">https://api.shushi100.com/app/ask/list</a></td>
+</tr>
+<tr>
+<td>GET 参数</td>
+<td>id</td>
+<td>分类id，整形，必填</td>
+</tr>
+<tr>
+<td></td>
+<td>page</td>
+<td>选填（整数），页码，默认1</td>
+</tr>
+<tr>
+<td></td>
+<td>pageSize</td>
+<td>选填（整数），条数，默认6</td>
+</tr>
+<tr>
+<td>返回状态</td>
+<td>200</td>
+<td>调用成功，并返回 JSON 数据</td>
+</tr>
+<tr>
+<td>返回数据 json(ok=1)</td>
+<td>ok</td>
+<td>成功ok=1</td>
+</tr>
+<tr>
+<td></td>
+<td>data</td>
+<td>返回数据</td>
+</tr>
+<tr>
+<td></td>
+<td>data.cate</td>
+<td>一级分类，是个数组</td>
+</tr>
+<tr>
+<td></td>
+<td>data.cate.id</td>
+<td>分类id</td>
+</tr>
+<tr>
+<td></td>
+<td>data.cate.name</td>
+<td>名称</td>
+</tr>
+<tr>
+<td></td>
+<td>data.cate.current</td>
+<td>是否点亮</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>data.cate2</td>
+<td>二级分类，是个数组</td>
+</tr>
+<tr>
+<td></td>
+<td>data.cate2.id</td>
+<td>分类id</td>
+</tr>
+<tr>
+<td></td>
+<td>data.cate2.name</td>
+<td>名称</td>
+</tr>
+<tr>
+<td></td>
+<td>data.cate2.current</td>
+<td>是否点亮</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>data.sorts</td>
+<td>排序，是个数组</td>
+</tr>
+<tr>
+<td></td>
+<td>data.sorts.name</td>
+<td>名称</td>
+</tr>
+<tr>
+<td></td>
+<td>data.sorts.current</td>
+<td>排序是否点亮</td>
+</tr>
+<tr>
+<td></td>
+<td>data.sorts.url</td>
+<td>请求api地址</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>data.list</td>
+<td>列表数据，是个数组</td>
+</tr>
+<tr>
+<td></td>
+<td>data.list.id</td>
+<td>问题id</td>
+</tr>
+<tr>
+<td></td>
+<td>data.list.title</td>
+<td>问题标题</td>
+</tr>
+<tr>
+<td></td>
+<td>data.list.askCategoryName</td>
+<td>问题分类名称</td>
+</tr>
+<tr>
+<td></td>
+<td>data.list.replyNum</td>
+<td>问题的答案数量</td>
+</tr>
+<tr>
+<td></td>
+<td>data.list.createdAt</td>
+<td>创建时间</td>
+</tr>
+<tr>
+<td>返回数据 json(ok=0)</td>
+<td>ok</td>
+<td>失败ok=0</td>
+</tr>
+<tr>
+<td></td>
+<td>error</td>
+<td>错误信息</td>
+</tr>
+</tbody>
+</table>
+<h1 id="3-6-舒适问答详情"><a href="#3-6-舒适问答详情" class="headerlink" title="3.6 舒适问答详情"></a>3.6 舒适问答详情</h1><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HTTP 方法</td>
+<td>　</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>本地HTTP 地址</td>
+<td>　</td>
+<td><a href="http://api.test2.shushi100.com:8100/app/ask/view" target="_blank" rel="noopener">http://api.test2.shushi100.com:8100/app/ask/view</a></td>
+</tr>
+<tr>
+<td>正式服务器</td>
+<td>　</td>
+<td><a href="https://api.shushi100.com/app/ask/view" target="_blank" rel="noopener">https://api.shushi100.com/app/ask/view</a></td>
+</tr>
+<tr>
+<td>GET 参数</td>
+<td>id</td>
+<td>问题id，整形，必填</td>
+</tr>
+<tr>
+<td>返回状态</td>
+<td>200</td>
+<td>调用成功，并返回 JSON 数据</td>
+</tr>
+<tr>
+<td>返回数据 json(ok=1)</td>
+<td>ok</td>
+<td>成功ok=1</td>
+</tr>
+<tr>
+<td></td>
+<td>data</td>
+<td>返回数据</td>
+</tr>
+<tr>
+<td></td>
+<td>data.updateButton</td>
+<td>编辑按钮是否显示，布尔值，true显示，false不显示</td>
+</tr>
+<tr>
+<td></td>
+<td>data.deleteButton</td>
+<td>删除按钮是否显示，布尔值，true显示，false不显示</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>data.main</td>
+<td>问题数据，是个数组</td>
+</tr>
+<tr>
+<td></td>
+<td>data.main.id</td>
+<td>问题id</td>
+</tr>
+<tr>
+<td></td>
+<td>data.main.title</td>
+<td>问题标题</td>
+</tr>
+<tr>
+<td></td>
+<td>data.main.userName</td>
+<td>提问者</td>
+</tr>
+<tr>
+<td></td>
+<td>data.main.view_count</td>
+<td>阅读次数</td>
+</tr>
+<tr>
+<td></td>
+<td>data.main.createdAt</td>
+<td>问题创建时间</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>data.best</td>
+<td>最佳答案</td>
+</tr>
+<tr>
+<td></td>
+<td>data.best.id</td>
+<td>最佳答案id</td>
+</tr>
+<tr>
+<td></td>
+<td>data.best.content</td>
+<td>最佳答案的内容</td>
+</tr>
+<tr>
+<td></td>
+<td>data.best.userName</td>
+<td>最佳答案的作者</td>
+</tr>
+<tr>
+<td></td>
+<td>data.best.userPic</td>
+<td>最佳答案的作者的头像</td>
+</tr>
+<tr>
+<td></td>
+<td>data.best.createdAt</td>
+<td>最佳答案创建时间</td>
+</tr>
+<tr>
+<td></td>
+<td>data.best.replyNum</td>
+<td>最佳答案的作者的回答数</td>
+</tr>
+<tr>
+<td></td>
+<td>data.best.AcceptNum</td>
+<td>最佳答案的作者的被采纳数</td>
+</tr>
+<tr>
+<td></td>
+<td>data.best.like_count</td>
+<td>最佳答案的点赞数</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>data.otherReply</td>
+<td>其他答案或者已有答案，是个数组，问题有最佳答案时，otherReply这块称“其他答案”，问题没有最佳答案时，otherReply这块称“已有答案”</td>
+</tr>
+<tr>
+<td></td>
+<td>data.otherReply.label</td>
+<td>其他/已有</td>
+</tr>
+<tr>
+<td></td>
+<td>data.otherReply.count</td>
+<td>答案数量</td>
+</tr>
+<tr>
+<td></td>
+<td>data.otherReply.list</td>
+<td>答案列表，是个数组</td>
+</tr>
+<tr>
+<td></td>
+<td>data.otherReply.list.id</td>
+<td>答案id</td>
+</tr>
+<tr>
+<td></td>
+<td>data.otherReply.list.content</td>
+<td>答案的内容</td>
+</tr>
+<tr>
+<td></td>
+<td>data.otherReply.list.userName</td>
+<td>答案的作者</td>
+</tr>
+<tr>
+<td></td>
+<td>data.otherReply.list.userPic</td>
+<td>答案的作者的头像</td>
+</tr>
+<tr>
+<td></td>
+<td>data.otherReply.list.createdAt</td>
+<td>答案创建时间</td>
+</tr>
+<tr>
+<td></td>
+<td>data.otherReply.list.replyNum</td>
+<td>答案的作者的回答数</td>
+</tr>
+<tr>
+<td></td>
+<td>data.otherReply.list.AcceptNum</td>
+<td>答案的作者的被采纳数</td>
+</tr>
+<tr>
+<td></td>
+<td>data.otherReply.list.like_count</td>
+<td>答案的点赞数</td>
+</tr>
+<tr>
+<td></td>
+<td>data.otherReply.list.acceptButton</td>
+<td>“采纳该答案为最佳答案”是否显示，布尔值，true显示，false不显示</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>data.related</td>
+<td>相关问题，是个数组</td>
+</tr>
+<tr>
+<td></td>
+<td>data.related.id</td>
+<td>问题id</td>
+</tr>
+<tr>
+<td></td>
+<td>data.related.title</td>
+<td>问题标题</td>
+</tr>
+<tr>
+<td></td>
+<td>data.related.askCategoryName</td>
+<td>问题分类名称</td>
+</tr>
+<tr>
+<td></td>
+<td>data.related.replyNum</td>
+<td>问题的答案数量</td>
+</tr>
+<tr>
+<td></td>
+<td>data.related.createdAt</td>
+<td>创建时间</td>
+</tr>
+<tr>
+<td>返回数据 json(ok=0)</td>
+<td>ok</td>
+<td>失败ok=0</td>
+</tr>
+<tr>
+<td></td>
+<td>error</td>
+<td>错误信息</td>
+</tr>
+</tbody>
+</table>
+<h1 id="3-7-舒适问答详情-问题编辑"><a href="#3-7-舒适问答详情-问题编辑" class="headerlink" title="3.7 舒适问答详情-问题编辑"></a>3.7 舒适问答详情-问题编辑</h1><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HTTP 方法</td>
+<td>　</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>本地HTTP 地址</td>
+<td>　</td>
+<td><a href="http://api.test2.shushi100.com:8100/app/ask/update" target="_blank" rel="noopener">http://api.test2.shushi100.com:8100/app/ask/update</a></td>
+</tr>
+<tr>
+<td>正式服务器</td>
+<td>　</td>
+<td><a href="https://api.shushi100.com/app/ask/update" target="_blank" rel="noopener">https://api.shushi100.com/app/ask/update</a></td>
+</tr>
+<tr>
+<td>GET参数</td>
+<td>id</td>
+<td>问题id</td>
+</tr>
+<tr>
+<td>返回状态</td>
+<td>200</td>
+<td>调用成功，并返回 JSON 数据</td>
+</tr>
+<tr>
+<td>返回数据 json(ok=1)</td>
+<td>ok</td>
+<td>ok=1</td>
+</tr>
+<tr>
+<td></td>
+<td>data</td>
+<td>返回数据</td>
+</tr>
+<tr>
+<td></td>
+<td>data.id</td>
+<td>问题id</td>
+</tr>
+<tr>
+<td></td>
+<td>data.title</td>
+<td>问题标题</td>
+</tr>
+<tr>
+<td></td>
+<td>data.desc</td>
+<td>问题描述</td>
+</tr>
+<tr>
+<td></td>
+<td>data.picUrl</td>
+<td>问题图片</td>
+</tr>
+<tr>
+<td></td>
+<td>data.system</td>
+<td>问题系统id</td>
+</tr>
+<tr>
+<td></td>
+<td>data.systemName</td>
+<td>问题系统名称</td>
+</tr>
+<tr>
+<td></td>
+<td>data.cate</td>
+<td>问题分类id</td>
+</tr>
+<tr>
+<td></td>
+<td>data.cateName</td>
+<td>问题分类名称</td>
+</tr>
+<tr>
+<td>返回数据 json(ok=0)</td>
+<td>ok</td>
+<td>失败ok=0</td>
+</tr>
+<tr>
+<td></td>
+<td>error</td>
+<td>错误信息</td>
+</tr>
+</tbody>
+</table>
+<h1 id="3-8-舒适问答详情-问题编辑保存"><a href="#3-8-舒适问答详情-问题编辑保存" class="headerlink" title="3.8 舒适问答详情-问题编辑保存"></a>3.8 舒适问答详情-问题编辑保存</h1><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HTTP 方法</td>
+<td>　</td>
+<td>POST</td>
+</tr>
+<tr>
+<td>本地HTTP 地址</td>
+<td>　</td>
+<td><a href="http://api.test2.shushi100.com:8100/app/ask/update" target="_blank" rel="noopener">http://api.test2.shushi100.com:8100/app/ask/update</a></td>
+</tr>
+<tr>
+<td>正式服务器</td>
+<td>　</td>
+<td><a href="https://api.shushi100.com/app/ask/update" target="_blank" rel="noopener">https://api.shushi100.com/app/ask/update</a></td>
+</tr>
+<tr>
+<td>GET参数</td>
+<td>id</td>
+<td>问题id</td>
+</tr>
+<tr>
+<td>POST参数</td>
+<td>title</td>
+<td>问题标题，字符串，必填</td>
+</tr>
+<tr>
+<td></td>
+<td>desc</td>
+<td>描述，字符串，选填</td>
+</tr>
+<tr>
+<td></td>
+<td>system</td>
+<td>问题系统id，整形，必填</td>
+</tr>
+<tr>
+<td></td>
+<td>cate</td>
+<td>问题分类id，整形，必填</td>
+</tr>
+<tr>
+<td></td>
+<td>Pic</td>
+<td>选填，图片文件</td>
+</tr>
+<tr>
+<td></td>
+<td>pic_del</td>
+<td>1删除图片，0不删除图片，默认0</td>
+</tr>
+<tr>
+<td>返回状态</td>
+<td>200</td>
+<td>调用成功，并返回 JSON 数据</td>
+</tr>
+<tr>
+<td>返回数据 json(ok=1)</td>
+<td>ok</td>
+<td>保存问题成功ok=1</td>
+</tr>
+<tr>
+<td></td>
+<td>data</td>
+<td>返回数据，本接口返回空数组</td>
+</tr>
+<tr>
+<td>返回数据 json(ok=0)</td>
+<td>ok</td>
+<td>保存问题失败ok=0</td>
+</tr>
+<tr>
+<td></td>
+<td>error</td>
+<td>错误信息</td>
+</tr>
+</tbody>
+</table>
+<h1 id="3-9-舒适问答-我要提问页面系统与分类选择列表"><a href="#3-9-舒适问答-我要提问页面系统与分类选择列表" class="headerlink" title="3.9 舒适问答-我要提问页面系统与分类选择列表"></a>3.9 舒适问答-我要提问页面系统与分类选择列表</h1><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HTTP 方法</td>
+<td>　</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>本地HTTP 地址</td>
+<td>　</td>
+<td><a href="http://api.test2.shushi100.com:8100/app/ask/options" target="_blank" rel="noopener">http://api.test2.shushi100.com:8100/app/ask/options</a></td>
+</tr>
+<tr>
+<td>正式服务器</td>
+<td>　</td>
+<td><a href="https://api.shushi100.com/app/ask/options" target="_blank" rel="noopener">https://api.shushi100.com/app/ask/options</a></td>
+</tr>
+<tr>
+<td>GET参数</td>
+<td>无</td>
+<td></td>
+</tr>
+<tr>
+<td>返回状态</td>
+<td>200</td>
+<td>调用成功，并返回 JSON 数据</td>
+</tr>
+<tr>
+<td>返回数据 json(ok=1)，本接口没有ok=0返回</td>
+<td>ok</td>
+<td>成功ok=1</td>
+</tr>
+<tr>
+<td></td>
+<td>data</td>
+<td>返回数据</td>
+</tr>
+<tr>
+<td></td>
+<td>data.id</td>
+<td>系统id</td>
+</tr>
+<tr>
+<td></td>
+<td>data.name</td>
+<td>系统名称</td>
+</tr>
+<tr>
+<td></td>
+<td>data.child</td>
+<td>系统下分类列表，是个数组</td>
+</tr>
+<tr>
+<td></td>
+<td>data.child.id</td>
+<td>分类id</td>
+</tr>
+<tr>
+<td></td>
+<td>data.child.name</td>
+<td>分类名称</td>
+</tr>
+</tbody>
+</table>
+<h1 id="4-0-舒适问答详情-采纳答案"><a href="#4-0-舒适问答详情-采纳答案" class="headerlink" title="4.0 舒适问答详情-采纳答案"></a>4.0 舒适问答详情-采纳答案</h1><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HTTP 方法</td>
+<td>　</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>本地HTTP 地址</td>
+<td>　</td>
+<td><a href="http://api.test2.shushi100.com:8100/app/ask/accept" target="_blank" rel="noopener">http://api.test2.shushi100.com:8100/app/ask/accept</a></td>
+</tr>
+<tr>
+<td>正式服务器</td>
+<td>　</td>
+<td><a href="https://api.shushi100.com/app/ask/accept" target="_blank" rel="noopener">https://api.shushi100.com/app/ask/accept</a></td>
+</tr>
+<tr>
+<td>GET参数</td>
+<td>id</td>
+<td>问题id</td>
+</tr>
+<tr>
+<td></td>
+<td>rid</td>
+<td>答案id</td>
+</tr>
+<tr>
+<td>返回状态</td>
+<td>200</td>
+<td>调用成功，并返回 JSON 数据</td>
+</tr>
+<tr>
+<td>返回数据 json(ok=1)</td>
+<td>ok</td>
+<td>成功ok=1</td>
+</tr>
+<tr>
+<td></td>
+<td>data</td>
+<td>返回数据，本接口返回空数组</td>
+</tr>
+<tr>
+<td>返回数据 json(ok=0)</td>
+<td>ok</td>
+<td>失败ok=0</td>
+</tr>
+<tr>
+<td></td>
+<td>error</td>
+<td>错误信息</td>
+</tr>
+</tbody>
+</table>
+<h1 id="4-1-舒适问答详情-问题删除"><a href="#4-1-舒适问答详情-问题删除" class="headerlink" title="4.1 舒适问答详情-问题删除"></a>4.1 舒适问答详情-问题删除</h1><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HTTP 方法</td>
+<td>　</td>
+<td>DELETE</td>
+</tr>
+<tr>
+<td>本地HTTP 地址</td>
+<td>　</td>
+<td><a href="http://api.test2.shushi100.com:8100/app/ask/delete" target="_blank" rel="noopener">http://api.test2.shushi100.com:8100/app/ask/delete</a></td>
+</tr>
+<tr>
+<td>正式服务器</td>
+<td>　</td>
+<td><a href="https://api.shushi100.com/app/ask/delete" target="_blank" rel="noopener">https://api.shushi100.com/app/ask/delete</a></td>
+</tr>
+<tr>
+<td>DELETE参数</td>
+<td>id</td>
+<td>问题id</td>
+</tr>
+<tr>
+<td>返回状态</td>
+<td>200</td>
+<td>调用成功，并返回 JSON 数据</td>
+</tr>
+<tr>
+<td>返回数据 json(ok=1)</td>
+<td>ok</td>
+<td>问题删除成功ok=1</td>
+</tr>
+<tr>
+<td></td>
+<td>data</td>
+<td>返回数据，本接口返回空数组</td>
+</tr>
+<tr>
+<td>返回数据 json(ok=0)</td>
+<td>ok</td>
+<td>问题删除失败ok=0</td>
+</tr>
+<tr>
+<td></td>
+<td>error</td>
+<td>错误信息</td>
+</tr>
+</tbody>
+</table>
+<h1 id="4-2-舒适问答-我要提问-需要token访问"><a href="#4-2-舒适问答-我要提问-需要token访问" class="headerlink" title="4.2 舒适问答-我要提问++++需要token访问"></a>4.2 舒适问答-我要提问++++需要token访问</h1><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HTTP 方法</td>
+<td>　</td>
+<td>POST</td>
+</tr>
+<tr>
+<td>本地HTTP 地址</td>
+<td>　</td>
+<td><a href="http://api.test2.shushi100.com:8100/app/ask/create" target="_blank" rel="noopener">http://api.test2.shushi100.com:8100/app/ask/create</a></td>
+</tr>
+<tr>
+<td>正式服务器</td>
+<td>　</td>
+<td><a href="https://api.shushi100.com/app/ask/create" target="_blank" rel="noopener">https://api.shushi100.com/app/ask/create</a></td>
+</tr>
+<tr>
+<td>POST 参数</td>
+<td>Pic</td>
+<td>选填，图片（POST FILE）</td>
+</tr>
+<tr>
+<td></td>
+<td>title</td>
+<td>问题标题，字符串，必填</td>
+</tr>
+<tr>
+<td></td>
+<td>desc</td>
+<td>问题描述，字符串，选填</td>
+</tr>
+<tr>
+<td></td>
+<td>system</td>
+<td>系统，整数，必填</td>
+</tr>
+<tr>
+<td></td>
+<td>cate</td>
+<td>分类，整数，必填</td>
+</tr>
+<tr>
+<td>返回状态</td>
+<td>200</td>
+<td>调用成功，并返回 JSON 数据</td>
+</tr>
+<tr>
+<td>返回数据 json(ok=1)</td>
+<td>ok</td>
+<td>成功ok=1</td>
+</tr>
+<tr>
+<td></td>
+<td>data</td>
+<td>返回数据，本接口返回空数组</td>
+</tr>
+<tr>
+<td>返回数据 json(ok=0)</td>
+<td>ok</td>
+<td>失败ok=0</td>
+</tr>
+<tr>
+<td></td>
+<td>error</td>
+<td>错误信息</td>
+</tr>
+</tbody>
+</table>
+<h1 id="4-3-舒适问答-我要回答-需要token访问"><a href="#4-3-舒适问答-我要回答-需要token访问" class="headerlink" title="4.3 舒适问答-我要回答++++需要token访问"></a>4.3 舒适问答-我要回答++++需要token访问</h1><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HTTP 方法</td>
+<td>　</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>本地HTTP 地址</td>
+<td>　</td>
+<td><a href="http://api.test2.shushi100.com:8100/app/ask/reply" target="_blank" rel="noopener">http://api.test2.shushi100.com:8100/app/ask/reply</a></td>
+</tr>
+<tr>
+<td>正式服务器</td>
+<td>　</td>
+<td><a href="https://api.shushi100.com/app/ask/reply" target="_blank" rel="noopener">https://api.shushi100.com/app/ask/reply</a></td>
+</tr>
+<tr>
+<td>GET 参数</td>
+<td>id</td>
+<td>问题id，整形，必填</td>
+</tr>
+<tr>
+<td>返回状态</td>
+<td>200</td>
+<td>调用成功，并返回 JSON 数据</td>
+</tr>
+<tr>
+<td>返回数据 json(ok=1)</td>
+<td>ok</td>
+<td>成功ok=1</td>
+</tr>
+<tr>
+<td></td>
+<td>data</td>
+<td>返回数据</td>
+</tr>
+<tr>
+<td></td>
+<td>data.ask</td>
+<td>问题数据</td>
+</tr>
+<tr>
+<td></td>
+<td>data.ask.id</td>
+<td>问题id</td>
+</tr>
+<tr>
+<td></td>
+<td>data.ask.title</td>
+<td>问题标题</td>
+</tr>
+<tr>
+<td></td>
+<td>data.ask.userName</td>
+<td>提问者</td>
+</tr>
+<tr>
+<td></td>
+<td>data.ask.view_count</td>
+<td>阅读次数</td>
+</tr>
+<tr>
+<td></td>
+<td>data.ask.createdAt</td>
+<td>问题创建时间</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>data.replier</td>
+<td>回答者信息</td>
+</tr>
+<tr>
+<td></td>
+<td>data.replier.nickname</td>
+<td>昵称</td>
+</tr>
+<tr>
+<td></td>
+<td>data.replier.picUrl</td>
+<td>头像</td>
+</tr>
+<tr>
+<td></td>
+<td>data.replier.time</td>
+<td>当前时间</td>
+</tr>
+<tr>
+<td>返回数据 json(ok=0)</td>
+<td>ok</td>
+<td>失败ok=0</td>
+</tr>
+<tr>
+<td></td>
+<td>error</td>
+<td>错误信息</td>
+</tr>
+</tbody>
+</table>
+<h1 id="4-4-舒适问答-保存回答-需要token访问"><a href="#4-4-舒适问答-保存回答-需要token访问" class="headerlink" title="4.4 舒适问答-保存回答++++需要token访问"></a>4.4 舒适问答-保存回答++++需要token访问</h1><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HTTP 方法</td>
+<td>　</td>
+<td>POST</td>
+</tr>
+<tr>
+<td>本地HTTP 地址</td>
+<td>　</td>
+<td><a href="http://api.test2.shushi100.com:8100/app/ask/reply" target="_blank" rel="noopener">http://api.test2.shushi100.com:8100/app/ask/reply</a></td>
+</tr>
+<tr>
+<td>正式服务器</td>
+<td>　</td>
+<td><a href="https://api.shushi100.com/app/ask/reply" target="_blank" rel="noopener">https://api.shushi100.com/app/ask/reply</a></td>
+</tr>
+<tr>
+<td>GET 参数</td>
+<td>id</td>
+<td>问题id，整形，必填</td>
+</tr>
+<tr>
+<td>POST 参数</td>
+<td>content</td>
+<td>答案内容，字符串，必填</td>
+</tr>
+<tr>
+<td>返回状态</td>
+<td>200</td>
+<td>调用成功，并返回 JSON 数据</td>
+</tr>
+<tr>
+<td>返回数据 json(ok=1)</td>
+<td>ok</td>
+<td>成功ok=1</td>
+</tr>
+<tr>
+<td></td>
+<td>data</td>
+<td>返回数据，本接口返回空数组</td>
+</tr>
+<tr>
+<td>返回数据 json(ok=0)</td>
+<td>ok</td>
+<td>失败ok=0</td>
+</tr>
+<tr>
+<td></td>
+<td>error</td>
+<td>错误信息</td>
+</tr>
+</tbody>
+</table>
+<h1 id="4-5-舒适问答-首页详情页回答点赞（问答详情页点赞，需要app来判断和记录是否今天点击过）"><a href="#4-5-舒适问答-首页详情页回答点赞（问答详情页点赞，需要app来判断和记录是否今天点击过）" class="headerlink" title="4.5 舒适问答-首页详情页回答点赞（问答详情页点赞，需要app来判断和记录是否今天点击过）"></a>4.5 舒适问答-首页详情页回答点赞（问答详情页点赞，需要app来判断和记录是否今天点击过）</h1><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HTTP 方法</td>
+<td>　</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>本地HTTP 地址</td>
+<td>　</td>
+<td><a href="http://api.test2.shushi100.com:8100/app/ask/praise" target="_blank" rel="noopener">http://api.test2.shushi100.com:8100/app/ask/praise</a></td>
+</tr>
+<tr>
+<td>正式服务器</td>
+<td>　</td>
+<td><a href="https://api.shushi100.com/app/ask/praise" target="_blank" rel="noopener">https://api.shushi100.com/app/ask/praise</a></td>
+</tr>
+<tr>
+<td>GET 参数</td>
+<td>rid</td>
+<td>答案id，整形，必填</td>
+</tr>
+<tr>
+<td>返回状态</td>
+<td>200</td>
+<td>调用成功，并返回 JSON 数据</td>
+</tr>
+<tr>
+<td>返回数据 json(ok=1)</td>
+<td>ok</td>
+<td>成功ok=1</td>
+</tr>
+<tr>
+<td></td>
+<td>data</td>
+<td>返回数据</td>
+</tr>
+<tr>
+<td></td>
+<td>data.num</td>
+<td>点赞数</td>
+</tr>
+<tr>
+<td>返回数据 json(ok=0)</td>
+<td>ok</td>
+<td>失败ok=0</td>
+</tr>
+<tr>
+<td></td>
+<td>error</td>
+<td>错误信息</td>
+</tr>
+</tbody>
+</table>
+<h1 id="4-6-美的旗舰店"><a href="#4-6-美的旗舰店" class="headerlink" title="4.6 美的旗舰店"></a>4.6 美的旗舰店</h1><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HTTP 方法</td>
+<td>　</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>本地HTTP 地址</td>
+<td>　</td>
+<td><a href="http://api.test2.shushi100.com:8100/app/midea/index" target="_blank" rel="noopener">http://api.test2.shushi100.com:8100/app/midea/index</a></td>
+</tr>
+<tr>
+<td>正式服务器</td>
+<td>　</td>
+<td><a href="https://api.shushi100.com/app/midea/index" target="_blank" rel="noopener">https://api.shushi100.com/app/midea/index</a></td>
+</tr>
+<tr>
+<td>GET 参数</td>
+<td>provider_id</td>
+<td>当前服务商id，整形，必填</td>
+</tr>
+<tr>
+<td>返回状态</td>
+<td>200</td>
+<td>调用成功，并返回 JSON 数据</td>
+</tr>
+<tr>
+<td>返回数据 json(ok=1)，本接口没有ok=0返回</td>
+<td>ok</td>
+<td>成功ok=1</td>
+</tr>
+<tr>
+<td></td>
+<td>data</td>
+<td>返回数据</td>
+</tr>
+<tr>
+<td></td>
+<td>data.slides</td>
+<td>幻灯片，是个数组</td>
+</tr>
+<tr>
+<td></td>
+<td>data.slides.title</td>
+<td>幻灯片标题</td>
+</tr>
+<tr>
+<td></td>
+<td>data.slides.url</td>
+<td>幻灯片链接</td>
+</tr>
+<tr>
+<td></td>
+<td>data.slides.pic_url</td>
+<td>幻灯片图片</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>data.ad21</td>
+<td>旗舰店-咨询福利展示1</td>
+</tr>
+<tr>
+<td></td>
+<td>data.ad21.title</td>
+<td>标题</td>
+</tr>
+<tr>
+<td></td>
+<td>data.ad21.url</td>
+<td>链接</td>
+</tr>
+<tr>
+<td></td>
+<td>data.ad21.pic_url</td>
+<td>图片</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>data.ad22</td>
+<td>旗舰店-咨询福利展示2</td>
+</tr>
+<tr>
+<td></td>
+<td>data.ad22.title</td>
+<td>标题</td>
+</tr>
+<tr>
+<td></td>
+<td>data.ad22.url</td>
+<td>链接</td>
+</tr>
+<tr>
+<td></td>
+<td>data.ad22.pic_url</td>
+<td>图片</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>data.background</td>
+<td>旗舰店-美的活动通用背景</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>data.ad23</td>
+<td>旗舰店-爆品热卖广告</td>
+</tr>
+<tr>
+<td></td>
+<td>data.ad23.title</td>
+<td>标题</td>
+</tr>
+<tr>
+<td></td>
+<td>data.ad23.url</td>
+<td>链接</td>
+</tr>
+<tr>
+<td></td>
+<td>data.ad23.pic_url</td>
+<td>图片</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>data.ad24</td>
+<td>旗舰店- 返厂优惠广告</td>
+</tr>
+<tr>
+<td></td>
+<td>data.ad24.title</td>
+<td>标题</td>
+</tr>
+<tr>
+<td></td>
+<td>data.ad24.url</td>
+<td>链接</td>
+</tr>
+<tr>
+<td></td>
+<td>data.ad24.pic_url</td>
+<td>图片</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>data.ad29</td>
+<td>旗舰店-商用专区广告</td>
+</tr>
+<tr>
+<td></td>
+<td>data.ad29.title</td>
+<td>标题</td>
+</tr>
+<tr>
+<td></td>
+<td>data.ad29.url</td>
+<td>链接</td>
+</tr>
+<tr>
+<td></td>
+<td>data.ad29.pic_url</td>
+<td>图片</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>data.ad26</td>
+<td>旗舰店-中部通栏广告1</td>
+</tr>
+<tr>
+<td></td>
+<td>data.ad26.title</td>
+<td>标题</td>
+</tr>
+<tr>
+<td></td>
+<td>data.ad26.url</td>
+<td>链接</td>
+</tr>
+<tr>
+<td></td>
+<td>data.ad26.pic_url</td>
+<td>图片</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>data.floor</td>
+<td>美的楼层广告，是个数组</td>
+</tr>
+<tr>
+<td></td>
+<td>data.floor.key</td>
+<td>当前楼层序号</td>
+</tr>
+<tr>
+<td></td>
+<td>data.floor.name</td>
+<td>当前楼层名称</td>
+</tr>
+<tr>
+<td></td>
+<td>data.floor.floorAdBg</td>
+<td>当前楼层背景图片</td>
+</tr>
+<tr>
+<td></td>
+<td>data.floor.list</td>
+<td>当前楼层产品列表广告，是个数组</td>
+</tr>
+<tr>
+<td></td>
+<td>data.floor.list.title</td>
+<td>标题</td>
+</tr>
+<tr>
+<td></td>
+<td>data.floor.list.url</td>
+<td>链接</td>
+</tr>
+<tr>
+<td></td>
+<td>data.floor.list.pic_url</td>
+<td>图片</td>
+</tr>
+</tbody>
+</table>
+<h1 id="4-7-促销活动"><a href="#4-7-促销活动" class="headerlink" title="4.7 促销活动"></a>4.7 促销活动</h1><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HTTP 方法</td>
+<td>　</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>本地HTTP 地址</td>
+<td>　</td>
+<td><a href="http://api.test2.shushi100.com:8100/app/sales/index" target="_blank" rel="noopener">http://api.test2.shushi100.com:8100/app/sales/index</a></td>
+</tr>
+<tr>
+<td>正式服务器</td>
+<td>　</td>
+<td><a href="https://api.shushi100.com/app/sales/index" target="_blank" rel="noopener">https://api.shushi100.com/app/sales/index</a></td>
+</tr>
+<tr>
+<td>GET 参数</td>
+<td>provider_id</td>
+<td>当前服务商id，整形，必填</td>
+</tr>
+<tr>
+<td>返回状态</td>
+<td>200</td>
+<td>调用成功，并返回 JSON 数据</td>
+</tr>
+<tr>
+<td>返回数据 json(ok=1)</td>
+<td>ok</td>
+<td>成功ok=1</td>
+</tr>
+<tr>
+<td></td>
+<td>data</td>
+<td>返回数据</td>
+</tr>
+<tr>
+<td></td>
+<td>data.slides</td>
+<td>顶部幻灯片，是个数组</td>
+</tr>
+<tr>
+<td></td>
+<td>data.slides.title</td>
+<td>幻灯片标题</td>
+</tr>
+<tr>
+<td></td>
+<td>data.slides.pic_url</td>
+<td>幻灯片图片</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>data.background</td>
+<td>页面背景图片</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>data.adTitle1</td>
+<td>当前爆品顶部图片广告</td>
+</tr>
+<tr>
+<td></td>
+<td>data.adTitle1.title</td>
+<td>广告标题</td>
+</tr>
+<tr>
+<td></td>
+<td>data.adTitle1.pic_url</td>
+<td>广告图片</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>data.detonating</td>
+<td>当前爆品商品列表，是个数组</td>
+</tr>
+<tr>
+<td></td>
+<td>data.detonating.id</td>
+<td>产品id</td>
+</tr>
+<tr>
+<td></td>
+<td>data.detonating.title</td>
+<td>产品标题</td>
+</tr>
+<tr>
+<td></td>
+<td>data.detonating.pic_url</td>
+<td>产品图片</td>
+</tr>
+<tr>
+<td></td>
+<td>data.detonating.price</td>
+<td>价格</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>data.adTitle2</td>
+<td>精选好券顶部图片广告</td>
+</tr>
+<tr>
+<td></td>
+<td>data.adTitle2.title</td>
+<td>广告标题</td>
+</tr>
+<tr>
+<td></td>
+<td>data.adTitle2.pic_url</td>
+<td>广告图片</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>data.coupon</td>
+<td>精选好券列表（优惠券），是个数组</td>
+</tr>
+<tr>
+<td></td>
+<td>data.coupon.id</td>
+<td>优惠券id</td>
+</tr>
+<tr>
+<td></td>
+<td>data.coupon.full</td>
+<td>满额</td>
+</tr>
+<tr>
+<td></td>
+<td>data.coupon.cut</td>
+<td>优惠金额</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>data.adTitle3</td>
+<td>用券推荐顶部图片广告</td>
+</tr>
+<tr>
+<td></td>
+<td>data.adTitle3.title</td>
+<td>广告标题</td>
+</tr>
+<tr>
+<td></td>
+<td>data.adTitle3.pic_url</td>
+<td>广告图片</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>data.coupon_product</td>
+<td>用券推荐商品列表，是个数组</td>
+</tr>
+<tr>
+<td></td>
+<td>data.coupon_product.id</td>
+<td>产品id</td>
+</tr>
+<tr>
+<td></td>
+<td>data.coupon_product.title</td>
+<td>产品标题</td>
+</tr>
+<tr>
+<td></td>
+<td>data.coupon_product.pic_url</td>
+<td>产品图片</td>
+</tr>
+<tr>
+<td></td>
+<td>data.coupon_product.price</td>
+<td>价格</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>data.adTitle4</td>
+<td>品牌优选顶部图片广告</td>
+</tr>
+<tr>
+<td></td>
+<td>data.adTitle4.title</td>
+<td>广告标题</td>
+</tr>
+<tr>
+<td></td>
+<td>data.adTitle4.pic_url</td>
+<td>广告图片</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>data.quality_goods</td>
+<td>品牌优选板块，是个多维数组，一共有4层板块</td>
+</tr>
+<tr>
+<td></td>
+<td>data.quality_goods.brandBg</td>
+<td>品牌优选单层板块顶部图片广告，是个数组</td>
+</tr>
+<tr>
+<td></td>
+<td>data.quality_goods.brandBg.title</td>
+<td>广告标题</td>
+</tr>
+<tr>
+<td></td>
+<td>data.quality_goods.brandBg.pic_url</td>
+<td>广告图片</td>
+</tr>
+<tr>
+<td></td>
+<td>data.quality_goods.list</td>
+<td>品牌优选单层板块商品列表，是个数组</td>
+</tr>
+<tr>
+<td></td>
+<td>data.quality_goods.list.id</td>
+<td>产品id</td>
+</tr>
+<tr>
+<td></td>
+<td>data.quality_goods.list.title</td>
+<td>产品标题</td>
+</tr>
+<tr>
+<td></td>
+<td>data.quality_goods.list.pic_url</td>
+<td>产品图片</td>
+</tr>
+<tr>
+<td></td>
+<td>data.quality_goods.list.price</td>
+<td>价格</td>
+</tr>
+<tr>
+<td>返回数据 json(ok=0)</td>
+<td>ok</td>
+<td>ok=0跳转到首页，只有服务商id(provider_id)的值是1=武汉，90=成都，76=深圳，3=上海，2=北京的城市才能访问到活动页面，否则跳转到App首页</td>
+</tr>
+<tr>
+<td></td>
+<td>error</td>
+<td>错误信息，此接口错误信息为空</td>
+</tr>
+</tbody>
+</table>
+<h1 id="4-8-引导页广告"><a href="#4-8-引导页广告" class="headerlink" title="4.8 引导页广告"></a>4.8 引导页广告</h1><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HTTP 方法</td>
+<td>　</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>本地HTTP 地址</td>
+<td>　</td>
+<td><a href="http://api.test2.shushi100.com:8100/app/site/boot-page" target="_blank" rel="noopener">http://api.test2.shushi100.com:8100/app/site/boot-page</a></td>
+</tr>
+<tr>
+<td>正式服务器</td>
+<td>　</td>
+<td><a href="https://api.shushi100.com/app/site/boot-page" target="_blank" rel="noopener">https://api.shushi100.com/app/site/boot-page</a></td>
+</tr>
+<tr>
+<td>GET 参数</td>
+<td>provider_id</td>
+<td>当前服务商id，整形，必填</td>
+</tr>
+<tr>
+<td>返回状态</td>
+<td>200</td>
+<td>调用成功，并返回 JSON 数据</td>
+</tr>
+<tr>
+<td>返回数据 json(ok=1)，本接口没有ok=0返回</td>
+<td>ok</td>
+<td>成功ok=1</td>
+</tr>
+<tr>
+<td></td>
+<td>data</td>
+<td>返回数据，引导页广告，是个数组</td>
+</tr>
+<tr>
+<td></td>
+<td>data.id</td>
+<td>广告id</td>
+</tr>
+<tr>
+<td></td>
+<td>data.title</td>
+<td>广告名称</td>
+</tr>
+<tr>
+<td></td>
+<td>data.type</td>
+<td>广告类型</td>
+</tr>
+<tr>
+<td></td>
+<td>data.typeName</td>
+<td>广告类型名称</td>
+</tr>
+<tr>
+<td></td>
+<td>data.desc</td>
+<td>广告描述</td>
+</tr>
+<tr>
+<td></td>
+<td>data.pic</td>
+<td>广告图片</td>
+</tr>
+<tr>
+<td></td>
+<td>data.url</td>
+<td>链接地址</td>
+</tr>
+<tr>
+<td></td>
+<td>data.belong_id</td>
+<td>所属id</td>
+</tr>
+<tr>
+<td></td>
+<td>data.price</td>
+<td>商品价格</td>
+</tr>
+<tr>
+<td></td>
+<td>data.code</td>
+<td>系统code</td>
+</tr>
+<tr>
+<td></td>
+<td>data.category_id</td>
+<td>系统id</td>
+</tr>
+</tbody>
+</table>
+<h1 id="4-9-广告页广告"><a href="#4-9-广告页广告" class="headerlink" title="4.9 广告页广告"></a>4.9 广告页广告</h1><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HTTP 方法</td>
+<td>　</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>本地HTTP 地址</td>
+<td>　</td>
+<td><a href="http://api.test2.shushi100.com:8100/app/site/start-ad" target="_blank" rel="noopener">http://api.test2.shushi100.com:8100/app/site/start-ad</a></td>
+</tr>
+<tr>
+<td>正式服务器</td>
+<td>　</td>
+<td><a href="https://api.shushi100.com/app/site/start-ad" target="_blank" rel="noopener">https://api.shushi100.com/app/site/start-ad</a></td>
+</tr>
+<tr>
+<td>GET 参数</td>
+<td>provider_id</td>
+<td>当前服务商id，整形，必填</td>
+</tr>
+<tr>
+<td>返回状态</td>
+<td>200</td>
+<td>调用成功，并返回 JSON 数据</td>
+</tr>
+<tr>
+<td>返回数据 json(ok=1)，本接口没有ok=0返回</td>
+<td>ok</td>
+<td>成功ok=1</td>
+</tr>
+<tr>
+<td></td>
+<td>data</td>
+<td>返回数据</td>
+</tr>
+<tr>
+<td></td>
+<td>data.id</td>
+<td>广告id</td>
+</tr>
+<tr>
+<td></td>
+<td>data.title</td>
+<td>广告名称</td>
+</tr>
+<tr>
+<td></td>
+<td>data.type</td>
+<td>广告类型</td>
+</tr>
+<tr>
+<td></td>
+<td>data.typeName</td>
+<td>广告类型名称</td>
+</tr>
+<tr>
+<td></td>
+<td>data.desc</td>
+<td>广告描述</td>
+</tr>
+<tr>
+<td></td>
+<td>data.pic</td>
+<td>广告图片</td>
+</tr>
+<tr>
+<td></td>
+<td>data.url</td>
+<td>链接地址</td>
+</tr>
+<tr>
+<td></td>
+<td>data.belong_id</td>
+<td>所属id</td>
+</tr>
+<tr>
+<td></td>
+<td>data.price</td>
+<td>商品价格</td>
+</tr>
+<tr>
+<td></td>
+<td>data.code</td>
+<td>系统code</td>
+</tr>
+<tr>
+<td></td>
+<td>data.category_id</td>
+<td>系统id</td>
+</tr>
+</tbody>
+</table>
+<h1 id="5-0-首页-幻灯片广告"><a href="#5-0-首页-幻灯片广告" class="headerlink" title="5.0 首页-幻灯片广告"></a>5.0 首页-幻灯片广告</h1><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HTTP 方法</td>
+<td>　</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>本地HTTP 地址</td>
+<td>　</td>
+<td><a href="http://api.test2.shushi100.com:8100/app/site/index-slide" target="_blank" rel="noopener">http://api.test2.shushi100.com:8100/app/site/index-slide</a></td>
+</tr>
+<tr>
+<td>正式服务器</td>
+<td>　</td>
+<td><a href="https://api.shushi100.com/app/site/index-slide" target="_blank" rel="noopener">https://api.shushi100.com/app/site/index-slide</a></td>
+</tr>
+<tr>
+<td>GET 参数</td>
+<td>provider_id</td>
+<td>当前服务商id，整形，必填</td>
+</tr>
+<tr>
+<td>返回状态</td>
+<td>200</td>
+<td>调用成功，并返回 JSON 数据</td>
+</tr>
+<tr>
+<td>返回数据 json(ok=1)，本接口没有ok=0返回</td>
+<td>ok</td>
+<td>成功ok=1</td>
+</tr>
+<tr>
+<td></td>
+<td>data</td>
+<td>返回数据，首页-顶部幻灯片广告，是个数组</td>
+</tr>
+<tr>
+<td></td>
+<td>data.id</td>
+<td>广告id</td>
+</tr>
+<tr>
+<td></td>
+<td>data.title</td>
+<td>广告名称</td>
+</tr>
+<tr>
+<td></td>
+<td>data.type</td>
+<td>广告类型</td>
+</tr>
+<tr>
+<td></td>
+<td>data.typeName</td>
+<td>广告类型名称</td>
+</tr>
+<tr>
+<td></td>
+<td>data.desc</td>
+<td>广告描述</td>
+</tr>
+<tr>
+<td></td>
+<td>data.pic</td>
+<td>广告图片</td>
+</tr>
+<tr>
+<td></td>
+<td>data.url</td>
+<td>链接地址</td>
+</tr>
+<tr>
+<td></td>
+<td>data.belong_id</td>
+<td>所属id</td>
+</tr>
+<tr>
+<td></td>
+<td>data.price</td>
+<td>商品价格</td>
+</tr>
+<tr>
+<td></td>
+<td>data.code</td>
+<td>系统code</td>
+</tr>
+<tr>
+<td></td>
+<td>data.category_id</td>
+<td>系统id</td>
+</tr>
+</tbody>
+</table>
+<h1 id="5-1-首页-优惠速递广告"><a href="#5-1-首页-优惠速递广告" class="headerlink" title="5.1 首页-优惠速递广告"></a>5.1 首页-优惠速递广告</h1><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HTTP 方法</td>
+<td>　</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>本地HTTP 地址</td>
+<td>　</td>
+<td><a href="http://api.test2.shushi100.com:8100/app/site/index-express" target="_blank" rel="noopener">http://api.test2.shushi100.com:8100/app/site/index-express</a></td>
+</tr>
+<tr>
+<td>正式服务器</td>
+<td>　</td>
+<td><a href="https://api.shushi100.com/app/site/index-express" target="_blank" rel="noopener">https://api.shushi100.com/app/site/index-express</a></td>
+</tr>
+<tr>
+<td>GET 参数</td>
+<td>provider_id</td>
+<td>当前服务商id，整形，必填</td>
+</tr>
+<tr>
+<td>返回状态</td>
+<td>200</td>
+<td>调用成功，并返回 JSON 数据</td>
+</tr>
+<tr>
+<td>返回数据 json(ok=1)，本接口没有ok=0返回</td>
+<td>ok</td>
+<td>成功ok=1</td>
+</tr>
+<tr>
+<td></td>
+<td>data</td>
+<td>返回数据，首页-优惠速递广告，是个数组</td>
+</tr>
+<tr>
+<td></td>
+<td>data.id</td>
+<td>广告id</td>
+</tr>
+<tr>
+<td></td>
+<td>data.title</td>
+<td>广告名称</td>
+</tr>
+<tr>
+<td></td>
+<td>data.type</td>
+<td>广告类型</td>
+</tr>
+<tr>
+<td></td>
+<td>data.typeName</td>
+<td>广告类型名称</td>
+</tr>
+<tr>
+<td></td>
+<td>data.desc</td>
+<td>广告描述</td>
+</tr>
+<tr>
+<td></td>
+<td>data.pic</td>
+<td>广告图片</td>
+</tr>
+<tr>
+<td></td>
+<td>data.url</td>
+<td>链接地址</td>
+</tr>
+<tr>
+<td></td>
+<td>data.belong_id</td>
+<td>所属id</td>
+</tr>
+<tr>
+<td></td>
+<td>data.price</td>
+<td>商品价格</td>
+</tr>
+<tr>
+<td></td>
+<td>data.code</td>
+<td>系统code</td>
+</tr>
+<tr>
+<td></td>
+<td>data.category_id</td>
+<td>系统id</td>
+</tr>
+</tbody>
+</table>
+<h1 id="5-2-首页-中部广告1"><a href="#5-2-首页-中部广告1" class="headerlink" title="5.2 首页-中部广告1"></a>5.2 首页-中部广告1</h1><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HTTP 方法</td>
+<td>　</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>本地HTTP 地址</td>
+<td>　</td>
+<td><a href="http://api.test2.shushi100.com:8100/app/site/index-center1" target="_blank" rel="noopener">http://api.test2.shushi100.com:8100/app/site/index-center1</a></td>
+</tr>
+<tr>
+<td>正式服务器</td>
+<td>　</td>
+<td><a href="https://api.shushi100.com/app/site/index-center1" target="_blank" rel="noopener">https://api.shushi100.com/app/site/index-center1</a></td>
+</tr>
+<tr>
+<td>GET 参数</td>
+<td>provider_id</td>
+<td>当前服务商id，整形，必填</td>
+</tr>
+<tr>
+<td>返回状态</td>
+<td>200</td>
+<td>调用成功，并返回 JSON 数据</td>
+</tr>
+<tr>
+<td>返回数据 json(ok=1)，本接口没有ok=0返回</td>
+<td>ok</td>
+<td>成功ok=1</td>
+</tr>
+<tr>
+<td></td>
+<td>data</td>
+<td>返回数据</td>
+</tr>
+<tr>
+<td></td>
+<td>data.id</td>
+<td>广告id</td>
+</tr>
+<tr>
+<td></td>
+<td>data.title</td>
+<td>广告名称</td>
+</tr>
+<tr>
+<td></td>
+<td>data.type</td>
+<td>广告类型</td>
+</tr>
+<tr>
+<td></td>
+<td>data.typeName</td>
+<td>广告类型名称</td>
+</tr>
+<tr>
+<td></td>
+<td>data.desc</td>
+<td>广告描述</td>
+</tr>
+<tr>
+<td></td>
+<td>data.pic</td>
+<td>广告图片</td>
+</tr>
+<tr>
+<td></td>
+<td>data.url</td>
+<td>链接地址</td>
+</tr>
+<tr>
+<td></td>
+<td>data.belong_id</td>
+<td>所属id</td>
+</tr>
+<tr>
+<td></td>
+<td>data.price</td>
+<td>商品价格</td>
+</tr>
+<tr>
+<td></td>
+<td>data.code</td>
+<td>系统code</td>
+</tr>
+<tr>
+<td></td>
+<td>data.category_id</td>
+<td>系统id</td>
+</tr>
+</tbody>
+</table>
+<h1 id="5-3-首页-大聚惠广告"><a href="#5-3-首页-大聚惠广告" class="headerlink" title="5.3 首页-大聚惠广告"></a>5.3 首页-大聚惠广告</h1><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HTTP 方法</td>
+<td>　</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>本地HTTP 地址</td>
+<td>　</td>
+<td><a href="http://api.test2.shushi100.com:8100/app/site/great-benefit" target="_blank" rel="noopener">http://api.test2.shushi100.com:8100/app/site/great-benefit</a></td>
+</tr>
+<tr>
+<td>正式服务器</td>
+<td>　</td>
+<td><a href="https://api.shushi100.com/app/site/great-benefit" target="_blank" rel="noopener">https://api.shushi100.com/app/site/great-benefit</a></td>
+</tr>
+<tr>
+<td>GET 参数</td>
+<td>provider_id</td>
+<td>当前服务商id，整形，必填</td>
+</tr>
+<tr>
+<td>返回数据</td>
+<td></td>
+<td>html页面源码</td>
+</tr>
+</tbody>
+</table>
+<h1 id="5-4-首页-品牌榜"><a href="#5-4-首页-品牌榜" class="headerlink" title="5.4 首页-品牌榜"></a>5.4 首页-品牌榜</h1><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HTTP 方法</td>
+<td>　</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>本地HTTP 地址</td>
+<td>　</td>
+<td><a href="http://api.test2.shushi100.com:8100/app/site/index-brand-title" target="_blank" rel="noopener">http://api.test2.shushi100.com:8100/app/site/index-brand-title</a></td>
+</tr>
+<tr>
+<td>正式服务器</td>
+<td>　</td>
+<td><a href="https://api.shushi100.com/app/site/index-brand-title" target="_blank" rel="noopener">https://api.shushi100.com/app/site/index-brand-title</a></td>
+</tr>
+<tr>
+<td>GET 参数</td>
+<td>provider_id</td>
+<td>当前服务商id，整形，必填</td>
+</tr>
+<tr>
+<td>返回数据</td>
+<td></td>
+<td>html页面源码</td>
+</tr>
+</tbody>
+</table>
+<h1 id="5-5-首页-中部广告2"><a href="#5-5-首页-中部广告2" class="headerlink" title="5.5 首页-中部广告2"></a>5.5 首页-中部广告2</h1><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HTTP 方法</td>
+<td>　</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>本地HTTP 地址</td>
+<td>　</td>
+<td><a href="http://api.test2.shushi100.com:8100/app/site/index-center2" target="_blank" rel="noopener">http://api.test2.shushi100.com:8100/app/site/index-center2</a></td>
+</tr>
+<tr>
+<td>正式服务器</td>
+<td>　</td>
+<td><a href="https://api.shushi100.com/app/site/index-center2" target="_blank" rel="noopener">https://api.shushi100.com/app/site/index-center2</a></td>
+</tr>
+<tr>
+<td>GET 参数</td>
+<td>provider_id</td>
+<td>当前服务商id，整形，必填</td>
+</tr>
+<tr>
+<td>返回状态</td>
+<td>200</td>
+<td>调用成功，并返回 JSON 数据</td>
+</tr>
+<tr>
+<td>返回数据 json(ok=1)，本接口没有ok=0返回</td>
+<td>ok</td>
+<td>成功ok=1</td>
+</tr>
+<tr>
+<td></td>
+<td>data</td>
+<td>返回数据，中部广告2列表，是个数组</td>
+</tr>
+<tr>
+<td></td>
+<td>data.id</td>
+<td>广告id</td>
+</tr>
+<tr>
+<td></td>
+<td>data.title</td>
+<td>广告名称</td>
+</tr>
+<tr>
+<td></td>
+<td>data.type</td>
+<td>广告类型</td>
+</tr>
+<tr>
+<td></td>
+<td>data.typeName</td>
+<td>广告类型名称</td>
+</tr>
+<tr>
+<td></td>
+<td>data.desc</td>
+<td>广告描述</td>
+</tr>
+<tr>
+<td></td>
+<td>data.pic</td>
+<td>广告图片</td>
+</tr>
+<tr>
+<td></td>
+<td>data.url</td>
+<td>链接地址</td>
+</tr>
+<tr>
+<td></td>
+<td>data.belong_id</td>
+<td>所属id</td>
+</tr>
+<tr>
+<td></td>
+<td>data.price</td>
+<td>商品价格</td>
+</tr>
+<tr>
+<td></td>
+<td>data.code</td>
+<td>系统code</td>
+</tr>
+<tr>
+<td></td>
+<td>data.category_id</td>
+<td>系统id</td>
+</tr>
+</tbody>
+</table>
+<h1 id="5-6-首页-工程案例"><a href="#5-6-首页-工程案例" class="headerlink" title="5.6 首页-工程案例"></a>5.6 首页-工程案例</h1><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HTTP 方法</td>
+<td>　</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>本地HTTP 地址</td>
+<td>　</td>
+<td><a href="http://api.test2.shushi100.com:8100/app/site/index-project-data" target="_blank" rel="noopener">http://api.test2.shushi100.com:8100/app/site/index-project-data</a></td>
+</tr>
+<tr>
+<td>正式服务器</td>
+<td>　</td>
+<td><a href="https://api.shushi100.com/app/site/index-project-data" target="_blank" rel="noopener">https://api.shushi100.com/app/site/index-project-data</a></td>
+</tr>
+<tr>
+<td>GET 参数</td>
+<td>provider_id</td>
+<td>当前服务商id，整形，必填</td>
+</tr>
+<tr>
+<td>返回数据</td>
+<td></td>
+<td>html页面源码</td>
+</tr>
+</tbody>
+</table>
+<h1 id="5-7-首页-效果图"><a href="#5-7-首页-效果图" class="headerlink" title="5.7 首页-效果图"></a>5.7 首页-效果图</h1><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HTTP 方法</td>
+<td>　</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>本地HTTP 地址</td>
+<td>　</td>
+<td><a href="http://api.test2.shushi100.com:8100/app/site/index-albums-data" target="_blank" rel="noopener">http://api.test2.shushi100.com:8100/app/site/index-albums-data</a></td>
+</tr>
+<tr>
+<td>正式服务器</td>
+<td>　</td>
+<td><a href="https://api.shushi100.com/app/site/index-albums-data" target="_blank" rel="noopener">https://api.shushi100.com/app/site/index-albums-data</a></td>
+</tr>
+<tr>
+<td>GET 参数</td>
+<td>provider_id</td>
+<td>当前服务商id，整形，必填</td>
+</tr>
+<tr>
+<td>返回状态</td>
+<td>200</td>
+<td>调用成功，并返回 JSON 数据</td>
+</tr>
+<tr>
+<td>返回数据 json(ok=1)，本接口没有ok=0返回</td>
+<td>ok</td>
+<td>成功ok=1</td>
+</tr>
+<tr>
+<td></td>
+<td>data</td>
+<td>返回数据，效果图列表，是个数组</td>
+</tr>
+<tr>
+<td></td>
+<td>data.id</td>
+<td>效果图id</td>
+</tr>
+<tr>
+<td></td>
+<td>data.title</td>
+<td>效果图名称</td>
+</tr>
+<tr>
+<td></td>
+<td>data.picUrl</td>
+<td>效果图图片</td>
+</tr>
+<tr>
+<td></td>
+<td>data.tags</td>
+<td>效果图标签，是个数组</td>
+</tr>
+</tbody>
+</table>
+<h1 id="5-8-首页-购物指导"><a href="#5-8-首页-购物指导" class="headerlink" title="5.8 首页-购物指导"></a>5.8 首页-购物指导</h1><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HTTP 方法</td>
+<td>　</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>本地HTTP 地址</td>
+<td>　</td>
+<td><a href="http://api.test2.shushi100.com:8100/app/site/guidance" target="_blank" rel="noopener">http://api.test2.shushi100.com:8100/app/site/guidance</a></td>
+</tr>
+<tr>
+<td>正式服务器</td>
+<td>　</td>
+<td><a href="https://api.shushi100.com/app/site/guidance" target="_blank" rel="noopener">https://api.shushi100.com/app/site/guidance</a></td>
+</tr>
+<tr>
+<td>GET 参数</td>
+<td>provider_id</td>
+<td>当前服务商id，整形，必填</td>
+</tr>
+<tr>
+<td>返回数据</td>
+<td></td>
+<td>html页面源码</td>
+</tr>
+</tbody>
+</table>
+<h1 id="5-9-首页-舒适快报"><a href="#5-9-首页-舒适快报" class="headerlink" title="5.9 首页-舒适快报"></a>5.9 首页-舒适快报</h1><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HTTP 方法</td>
+<td>　</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>本地HTTP 地址</td>
+<td>　</td>
+<td><a href="http://api.test2.shushi100.com:8100/app/site/comfort-and-express" target="_blank" rel="noopener">http://api.test2.shushi100.com:8100/app/site/comfort-and-express</a></td>
+</tr>
+<tr>
+<td>正式服务器</td>
+<td>　</td>
+<td><a href="https://api.shushi100.com/app/site/comfort-and-express" target="_blank" rel="noopener">https://api.shushi100.com/app/site/comfort-and-express</a></td>
+</tr>
+<tr>
+<td>GET 参数</td>
+<td>provider_id</td>
+<td>当前服务商id，整形，必填</td>
+</tr>
+<tr>
+<td>返回状态</td>
+<td>200</td>
+<td>调用成功，并返回 JSON 数据</td>
+</tr>
+<tr>
+<td>返回数据 json(ok=1)，本接口没有ok=0返回</td>
+<td>ok</td>
+<td>成功ok=1</td>
+</tr>
+<tr>
+<td></td>
+<td>data</td>
+<td>返回数据，舒适快报文章列表，是个数组</td>
+</tr>
+<tr>
+<td></td>
+<td>data.id</td>
+<td>文章id</td>
+</tr>
+<tr>
+<td></td>
+<td>data.title</td>
+<td>文章名称</td>
+</tr>
+</tbody>
+</table>
+<h1 id="6-0-首页-猜你喜欢"><a href="#6-0-首页-猜你喜欢" class="headerlink" title="6.0 首页-猜你喜欢"></a>6.0 首页-猜你喜欢</h1><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HTTP 方法</td>
+<td>　</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>本地HTTP 地址</td>
+<td>　</td>
+<td><a href="http://api.test2.shushi100.com:8100/app/site/guess-you-like" target="_blank" rel="noopener">http://api.test2.shushi100.com:8100/app/site/guess-you-like</a></td>
+</tr>
+<tr>
+<td>正式服务器</td>
+<td>　</td>
+<td><a href="https://api.shushi100.com/app/site/guess-you-like" target="_blank" rel="noopener">https://api.shushi100.com/app/site/guess-you-like</a></td>
+</tr>
+<tr>
+<td>GET 参数</td>
+<td>provider_id</td>
+<td>当前服务商id，整形，必填</td>
+</tr>
+<tr>
+<td>返回状态</td>
+<td>200</td>
+<td>调用成功，并返回 JSON 数据</td>
+</tr>
+<tr>
+<td>返回数据 json(ok=1)，本接口没有ok=0返回</td>
+<td>ok</td>
+<td>成功ok=1</td>
+</tr>
+<tr>
+<td></td>
+<td>data</td>
+<td>返回数据，商品列表，是个数组</td>
+</tr>
+<tr>
+<td></td>
+<td>data.id</td>
+<td>商品id</td>
+</tr>
+<tr>
+<td></td>
+<td>data.title</td>
+<td>商品名称</td>
+</tr>
+<tr>
+<td></td>
+<td>data.pic_url</td>
+<td>商品图片</td>
+</tr>
+<tr>
+<td></td>
+<td>data.price</td>
+<td>商品价格</td>
+</tr>
+<tr>
+<td></td>
+<td>data.market_price</td>
+<td>商品市场价</td>
+</tr>
+<tr>
+<td></td>
+<td>data.url</td>
+<td>url</td>
+</tr>
+<tr>
+<td></td>
+<td>data.tag_name</td>
+<td>标签</td>
+</tr>
+</tbody>
+</table>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -203,7 +5463,7 @@
 		</ul>
 	</div>
 
-          
+      
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
@@ -216,44 +5476,104 @@
 	</div>
 
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://litten.me/2018/10/11/api-doc/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/10/11/hello-world/" class="archive-article-date">
-  	<time datetime="2018-10-11T08:11:20.790Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-10-11</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2018/10/11/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hello World</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/10/11/hello-world/">Hello World</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
+
+  
 
 
           </div>
@@ -276,8 +5596,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
