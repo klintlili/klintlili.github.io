@@ -160,6 +160,68 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-发布一个composer包" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/10/12/发布一个composer包/">发布一个composer包</a>
+    </h1>
+  
+
+        
+        <a href="/2018/10/12/发布一个composer包/" class="archive-article-date">
+  	<time datetime="2018-10-12T03:01:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-10-12</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>1，在<code>github</code>上创建一个仓库,然后拉去到本地,在仓库目录中执行命令:<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">composer init</div></pre></td></tr></table></figure></p><br><p>填写包的信息,创建<code>composer.json</code>文件. <a href="http://note.youdao.com/" target="_blank" rel="external">更多配置</a>信息可查阅其他资料</p><br><p>2,<code>push</code>创建的<code>composer.json</code>到<code>github</code>上去.</p><br><p>3,登录 <a href="https://packagist.org/" target="_blank" rel="external">https://packagist.org</a> 点击网页顶部<code>submit</code>按钮:<br><img src="http://oygy5legq.bkt.clouddn.com/composer_submit.png" alt="image"><br>填写自己刚刚创建的<code>github</code>项目地址并提交.<br><a id="more"></a><br>4,配置项目自动更新到<code>composer</code>仓库中,</p><br><p>a.打开 <a href="https://packagist.org/profile/" target="_blank" rel="external">https://packagist.org/profile</a>:<br><img src="http://oygy5legq.bkt.clouddn.com/composer_API_Token.png" alt="image"><br>点击<code>Your API Token</code>按钮复制<code>API Token</code>.</p><br><p>b.打开刚刚<code>github</code>项目地址, 点击 <code>Settings</code><br><img src="http://oygy5legq.bkt.clouddn.com/github_services.png" alt="image"><br><code>Services</code> 添加 <code>packagist</code>,页面跳转如下:<br><img src="http://oygy5legq.bkt.clouddn.com/github_services_config.png" alt="image"><br><code>user</code> 输入 <a href="https://packagist.org/profile/" target="_blank" rel="external">https://packagist.org/profile</a> 的用户名即可, <code>Token</code> 填写上一步复制的 <code>API Token</code>, <code>Domain</code>可留空,点击 <code>Add service</code>提交.</p><br><p>5,包创建好了,但是没有书写代码.因为命名空间的原因,在测试环境中拉取后书写,然后提交到<code>github</code>.</p><br><p>注:拉取时会报错,提示没有 <code>stable</code> 版本,可指定 <code>dev-master</code> 版本进行拉取.代码完成后可以在去打上 <code>tag</code> 创建版本.</p>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/10/12/发布一个composer包/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-码云-自动拉取-PHP-部署项目" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
