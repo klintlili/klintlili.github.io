@@ -160,6 +160,68 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-码云-自动拉取-PHP-部署项目" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/10/12/码云-自动拉取-PHP-部署项目/">码云 自动拉取 PHP 部署项目 </a>
+    </h1>
+  
+
+        
+        <a href="/2018/10/12/码云-自动拉取-PHP-部署项目/" class="archive-article-date">
+  	<time datetime="2018-10-12T02:22:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-10-12</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>说明:首先用root用户先去拉取项目代码后,然后更改项目所属用户和组为www.忽略项目权限:<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git config core.filemode <span class="literal">false</span></div></pre></td></tr></table></figure></p><br><p>1,为www用户添加个人公钥(www是我站点文件所属用户)<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo -u www ssh-keygen -t rsa -C <span class="string">“<a href="mailto:xxxxx@xxxxx.com" target="_blank" rel="noopener">xxxxx@xxxxx.com</a>“</span></div></pre></td></tr></table></figure></p><br><p>在<code>/home/www/.ssh/</code>生成2个文件:<code>id_rsa</code>和<code>id_rsa.pub</code>.其中.pub是公钥,查看内容并且添加到码云 <a href="https://gitee.com/profile/sshkeys" target="_blank" rel="external">个人中心</a> SSH公钥 中去,<br><img src="https://static.oschina.net/uploads/img/201709/28152030_EgY9.png" alt="image"><br>然后输入命令<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo -u www ssh -T <a href="mailto:git@gitee.com" target="_blank" rel="noopener">git@gitee.com</a></div></pre></td></tr></table></figure></p><br><p>若返回<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Welcome to Gitee.com, yourname!</div></pre></td></tr></table></figure></p><br><p>则公钥配置成功.<br><a id="more"></a><br>2,配置<code>webhook</code><br><a href="https://gitee.com/coderanks/webchat/hooks" target="_blank" rel="external">配置地址</a><br><img src="https://static.oschina.net/uploads/img/201709/14145359_HsWI.png" alt="image"></p><br><p>3,添加自动更新地址的PHP代码</p><br><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">$json = json_decode(file_get_contents(<span class="string">‘php://input’</span>), <span class="keyword">true</span>);</div><div class="line"><span class="keyword">if</span>(!$json)&#123;</div><div class="line">    <span class="keyword">echo</span> <span class="string">‘error Request.’</span>;<span class="keyword">exit</span>;</div><div class="line">&#125;</div><div class="line"></div><div class="line">$passWord = $json[<span class="string">‘password’</span>]??<span class="string">‘’</span>;</div><div class="line"></div><div class="line"><span class="keyword">if</span>($passWord != <span class="string">‘yourPassword’</span>)&#123;</div><div class="line">    <span class="keyword">echo</span> <span class="string">‘error Request.’</span>;<span class="keyword">exit</span>;</div><div class="line">&#125;</div><div class="line"></div><div class="line">//$path = Yii::$app-&gt;runtimePath;</div><div class="line"></div><div class="line">shell_exec(<span class="string">‘/usr/bin/git pull’); #此时执行命令的角色就是www用户</span></div></pre></td></tr></table></figure><br><p>文件放在项目中可以访问到配置URL,这样<code>push</code>代码后,会自动部署项目了.</p>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/10/12/码云-自动拉取-PHP-部署项目/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-api-doc" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
